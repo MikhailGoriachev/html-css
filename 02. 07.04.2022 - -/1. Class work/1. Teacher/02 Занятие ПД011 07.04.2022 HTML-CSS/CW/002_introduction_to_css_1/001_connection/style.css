@@ -1,0 +1,16 @@
+﻿/*
+ CSS: Cascade Style Sheet
+ SASS, SCSS, LESS - препроцессоры CSS
+ стиль:
+ селектор {
+    имяПараметра1: значениеПараметра1;
+    имяПараметра2: значениеПараметра2;
+    ... ... ...
+    имяПараметраN: значениеПараметраN;
+ }
+*/
+p {
+    background-color: lightgreen;
+    color: darkgreen;
+    font-size: 18px;
+}

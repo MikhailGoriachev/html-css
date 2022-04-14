@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>background-position</title>
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 12px;
+            background-color: lightgray;
+            background-repeat: no-repeat;
+            
+        }
+
+        #img1 {
+            /* 
+			background-image
+			Свойство позволяет задать фоновое изображение для элемента. */
+            background-image: url(img/html.png);
+            background-size: 100px 100px;
+            
+			/*
+			    background-position
+                Свойство позволяет задавать фоновому изображению расположение,
+                в CSS3 появилась возможность задавать значения для нескольких
+                фоновых изображений.
+            */
+            background-position: center;
+        }
+
+        #img2 {
+            /* Свойство background-image позволяет задать фоновое изображение для элемента. */
+            background-image: url(img/сrafting.png), url(img/html.png);
+            
+			/* параметры первого изображения, параметры второго изображения */
+			background-size: 50px auto, 100% 100%;
+           
+		    /* можно задать позицию в единицах измерения или литеральными константами 
+			                    30px 60px
+			   также можно указать параметры нескольких изображений через запятую
+			   top left, 20px 60px
+			*/
+		    background-position: right bottom;
+        }
+
+        #img3 {
+            /* Свойство background-image позволяет задать фоновое изображение для элемента. */
+            background-image: url(img/сrafting.png), url(img/html.png);
+
+			/* параметры первого изображения, параметры второго изображения */
+			background-size: 50px auto, 50px auto;
+
+		    /* можно задать позицию в единицах измерения или литеральными константами
+			                    30px 60px
+			   также можно указать параметры нескольких изображений через запятую
+			   top left, 20px 60px
+			*/
+		    background-position: left top, center;
+        }
+    </style>
+</head>
+<body>
+    <div id="img1">
+        <!--Содержимое элемента DIV-->
+    </div>
+
+    <div id="img2">
+        
+    </div>
+
+    <div id="img3">
+
+    </div>
+
+</body>
+</html>

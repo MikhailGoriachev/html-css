@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!-- примитивная навигация -->
+    <div align="center">
+        <a href="004_inner_list.html" title="на следующую страницу">
+            <img src="imgs/arrow_right.png" />
+        </a>
+    </div>
+    <!-- Не помещайте hr внутрь div :)  -->
+    <hr>
+
+    <h3>Задание типа нумерации упорядоченного списка атрибутом <i>type</i></h3>
+
+    <!-- Обычный нумерованный список -->
+    <h4>Десятичная нумерация - по умолчанию</h4>
+    <ol>
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>IBM</li>
+        <li>DEC</li>
+        <li>Novell</li>
+    </ol>
+
+    <h4>Римская нумерация, нижний регистр, type="i"</h4>
+    <ol type="i">
+        <!-- Попробовать значения: a, I, i, 1 -->
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>IBM</li>
+        <li>DEC</li>
+        <li>Novell</li>
+    </ol>
+
+    <h4>Десятичная нумерация c заданного значения, атрибут start=""</h4>
+    <ol start="5">
+        <!-- Попробовать значения: a, I, i, 1 -->
+        <li>Microsoft</li>
+        <li>Google</li>
+        <!-- явное задание номера элементу списка -->
+        <li value="8">Apple</li> <!-- Добавить атрибут value-->
+        <li>IBM</li>
+        <li>DEC</li>
+        <li>Novell</li>
+    </ol>
+
+    <h4>Римская нумерация реверсированная, атрибут reversed, с начального значения</h4>
+    <!-- атрибут без значения может нарушать стандарт HTML - тогда
+    задать значение, равное атрибуту :) -->
+    <!--<ol reversed="reversed">-->
+    <!--<ol reversed start="100" type="I">-->
+    <ol reversed="reversed" start="15" type="I">
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>IBM</li>
+        <li>DEC</li>
+        <li>Novell</li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>background-clip</title>
+        <style>
+            div {
+                width: 300px;
+                height: 200px;
+                color: white;
+
+                background-image: url(img/drops.jpg);
+                padding: 20px;
+                margin: 20px;
+                border: 10px dashed blue;
+
+                /*
+                Свойство background-clip определяет, как цвет фона или фоновая картинка
+                должна выводиться под границами.
+                Допустимы следующие атрибуты:
+                    - padding-box - фон отображается внутри границ.
+                    - border-box  - фон выводится под границами.
+                    - content-box - фон отображается только внутри контента.
+            */
+                background-clip: padding-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+            scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut
+            laoreet ac, aliquam sit amet justo nunc tempor, metus vel. Tincidunt
+            integer eu augue augue nunc elit dolor, luctus placerat scelerisque
+            euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac,
+            aliquam sit amet justo nunc tempor, metus vel.
+        </div>
+    </body>
+</html>

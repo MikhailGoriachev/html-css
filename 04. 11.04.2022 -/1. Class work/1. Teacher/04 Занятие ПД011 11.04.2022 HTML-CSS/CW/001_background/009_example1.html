@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Пример фона</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+
+            background-color: lightgreen;
+
+            background-image: url(img/a.png), url(img/ten.png), url(img/eight.png);
+            background-size: 100px auto;
+            background-repeat: no-repeat;
+
+            /*                   A         10         8 */
+            background-position: 10px 20px, 60px 90px, 90px bottom;
+        }
+
+        body {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h3>Пример фона div</h3>
+    <div>
+        <h5>Фоновые картинки</h5>
+    </div>
+</body>
+</html>

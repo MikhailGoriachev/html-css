@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Приоритеты селекторов</title>
+    <style>
+        /* Высокий приоритетный */
+        #ident1 {
+            color: red;
+        }
+        /* Средний приоритет */
+        .class {
+            color: blue;
+        }
+        /* Низкий приоритет */
+        p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h3>Приоритеты селекторов</h3>
+    <p class="class" id="ident1">
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut
+        laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+    </p>
+    <p class="class" id="ident2">
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut
+        laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magnam numquam qui sequi ut voluptatem? Accusamus deserunt doloribus expedita fuga, libero nesciunt nisi provident quam quod repellendus similique suscipit voluptas!
+    </p>
+</body>
+</html>

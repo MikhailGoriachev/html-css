@@ -1,0 +1,68 @@
+/* Стили Страницы 1. Брянская область (page1.html) */
+
+/* #region Стиль контента */
+
+/* заголовки контента h2 */
+.content h2 {
+    font-family: Cambria, serif;
+    font-size: 14pt;
+    color: #365f91;
+    margin: 24pt 0 0 0;
+}
+
+/* заголовки контента h3 */
+.content h3 {
+    font-family: Cambria, serif;
+    font-size: 13pt;
+    color: #4f81bd;
+    margin: 10pt 0 0 0;
+}
+
+.content p {
+    margin: 0 0 10pt 0;
+}
+
+/* азац */
+.smallFont {
+    font-family: Tahoma, sans-serif;
+    font-size: 11pt;
+}
+
+/* большой текст */
+.bigFont {
+    font-family: Tahoma, sans-serif;
+    font-size: 18pt;
+}
+
+/* #endregion */
+
+/* #region Список навигации по странице */
+
+/* стиль списка */
+.gotoList {
+    font-family: Cambria, sans-serif;
+    font-weight: bolder;
+    font-size: 13pt;
+    color: #4f81bd;
+}
+
+/* заголовки */
+.gotoList ul {
+    padding-left: 0.1rem;
+}
+
+/* элементы */
+.gotoList li {
+    list-style: inside;
+    font-family: Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+    margin-left: 0.2rem;
+}
+
+/* ссылки */
+.gotoList li a {
+    text-decoration: none;
+    color: #5b67a2;
+}
+/* #endregion */

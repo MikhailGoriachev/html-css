@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* В версии CSS3 появилась возможность в качетсве границы элемента задавать изображение. */
+        .div-img {
+            background-color: greenyellow;
+            border: 30px solid #40c4c8;
+            /*
+                Свойство border-image позволяет установить в качестве
+                границы элемента изображение.
+
+            */
+            border-image: url(img/download.png) 40 round round;
+        }
+
+        .div1 {
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        .div2 {
+            width: 600px;
+            height: 350px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1 div-img"></div>
+    <div class="div2 div-img"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Фоновый цвет</title>
+    <style>
+        /* Свойство background-color позволяет задать элементу фоновый цвет. Цвет можно задавать несколькими способами:
+                - шестнадцатеричным значением
+                - функцией RGB(red, green, blue)
+                - функцией hsla(hue, saturation, lightness, opacity - тон, насыщенность и светлота)
+                  http://www.workwithcolor.com/hsl-color-picker-01.htm
+                  https://developer.mozilla.org/ru/docs/Web/CSS/color_value
+        */
+        div {            
+            background-color: #3366ee;   /* или в краткой форме: #36e */
+        }
+        p {
+            background-color: RGB(89, 89, 123);  /* r, g, b*/
+        }
+        span {
+            background-color: hsla(112, 89%, 36%, 0.53); /* */
+        }
+    </style>
+</head>
+<body>
+    <h3>Фоновый цвет</h3>
+    <div>
+        <h1>
+            Заголовок внутри элемента div.
+        </h1>
+        <p>
+            Параграф внутри элемента <span>div</span>.
+        </p>
+    </div>
+</body>
+</html>

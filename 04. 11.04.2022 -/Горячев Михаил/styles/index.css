@@ -1,0 +1,26 @@
+/* Стили для страницы index.html "Главная" */
+
+/* обший стиль блока конента */
+div.content {
+    font-family: Calibri, sans-serif;
+    font-size: 1.4rem;
+}
+
+/* заголовки 2 уровня */
+.content h2 {
+    font-family: 'Calibri Light', sans-serif;
+    color: #2e74b5;
+    font-size: 1.6rem;
+    margin: 1.2rem 0 0;
+}
+
+/* абзацы */
+.content h2 ~ p {
+    margin: 0 0 0.8rem 0;
+}
+
+/* список */
+.content ul {
+    list-style-position: inside;
+    margin: 0 0 0.8rem 0.63cm;
+}

@@ -1,0 +1,26 @@
+/* стиль заголовков h2 контента */
+.content h2 {
+    font-family: 'Calibri Light', sans-serif;
+    font-size: 16pt;
+    color: #2e74b5;
+}
+
+/* стиль абзацев p конента */
+.content {
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+.content h2 {
+    margin: 12pt 0 0 0;
+}
+
+.content p {
+    margin: 0 0 8pt 0;
+}
+
+.content ul {
+    margin: 0 0 8pt 0.64cm;
+    padding-left: 0.5cm;
+}

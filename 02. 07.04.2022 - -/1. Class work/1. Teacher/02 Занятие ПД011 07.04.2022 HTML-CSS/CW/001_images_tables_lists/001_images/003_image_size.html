@@ -1,0 +1,35 @@
+﻿ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Размеры изображений</title>
+</head>
+<body>
+    <!-- примитивная навигация с использованием картинки :) -->
+    <div align="center">
+        <a href="004_image_link.html" title="на следующую страницу">
+            <img src="img/arrow_right.png" />
+        </a>
+    </div>
+
+    <!-- размер задает размер изображения, никак не влияет на размер файла  -->
+    <img src="img/cottage-icon.png" alt="Коттедж" title="Коттедж" />
+
+    <!-- при задании одного измерения - второе рассчитывается с сохранением пропроций   -->
+    <img src="img/cottage-icon.png" alt="Коттедж" title="Коттедж" width="200" />
+
+    <!-- при задании двух измерений - пропорции могут нарушаться  -->
+    <img src="img/cottage-icon.png" alt="Коттедж" title="Коттедж" width="150" height="300" />
+
+    <img src="img/fibo_tree.jpg" alt="Дерево Фибоначчи" height="300" />
+    <br >
+
+    <img src="img/cottage-icon.png" alt="Коттедж" title="Коттедж" height="30" />
+
+    <img src="img/boat_boy.gif" alt="Анимированный GIF" />
+
+    <img src="img/boat_boy.gif" alt="Анимированный GIF" height="100" />
+
+    <img src="img/fibo_tree.jpg" alt="Дерево Фибоначчи" width="140" />
+</body>
+</html>

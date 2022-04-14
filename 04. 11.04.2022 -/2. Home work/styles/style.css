@@ -1,0 +1,134 @@
+/* Основные стили */
+
+/* 
+    Палитра:
+    #2E4053     color 1     
+    #5D6D7E     color 2
+    #F7F9F9     color 3
+    #3498DB     color 4
+    #D6EAF8     color 5
+*/
+
+/* стили по умолчанию */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* общие стили страницы */
+html {
+    background-color: #d6eaf8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+/* #region Панель навигации */
+
+/* иконка */
+img.navbar-logo {
+    width: 2.5rem;
+    margin: -0.6rem 1rem;
+}
+
+/* текст заголовок страницы */
+a.navbar-text {
+    font-size: 1.6rem;
+    margin-right: 10%;
+}
+
+/* панель навигации */
+div.navbar {
+    background-color: #2e4053;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+/* ссылки навигационной панели */
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* текущая вкладка */
+span.navbar-select-tab {
+    padding: 0.5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.466);
+    border-radius: 1rem;
+}
+
+/* иконка пункта навигационной панели */
+img.navbar-img {
+    width: 1.6rem;
+    margin: auto 0.5rem -0.3rem;
+}
+
+/* сепаратор для навигацонной панели */
+span.navbar-separator {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0rem 1rem;
+}
+
+/* #endregion */
+
+/* #region Контент страницы */
+
+/* обший стиль блока */
+div.content {
+    background-color: #e2eef7;
+    box-shadow: 0 0px 2rem #00000052;
+    margin: 2rem 10%;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #989fa5;
+    padding: 1.5rem 3rem;
+    font-weight: normal;
+    text-align: justify;
+}
+
+/* ссылка "подняться вверх" */
+.goto-top {
+    padding: 0.5rem;
+    width: 5rem;
+    background-color: #b3b7bbb9;
+    border: 0.1rem solid rgba(71, 68, 68, 0.466);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 3rem 0 1rem;
+}
+
+/* стиль ссылки "подняться вверх" */
+.goto-top a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1a7de0;
+}
+
+/* #endregion */
+
+/* #region Нижняя панель */
+.footer {
+    padding: 2.5rem;
+    margin: 0;
+    background-color: #2e4053;
+    font-size: 1rem;
+    color: #c0c9cf;
+}
+
+/* выделение фрагментов */
+.footer span {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* ссылки */
+.footer a {
+    text-decoration: none;
+    color: rgb(114, 183, 223);
+    font-size: 1.2rem;
+}
+
+/* #endregion */

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        p {
+            font-size: 3rem;
+        }
+        .one {
+            /*
+                Свойство vertical-align задает вертикальное выравнивание.
+                Имеет следующие значения:
+                    - baseline    - выравнивание по базовой линии родительского элемента.
+                                    Если ее нет, то за базовую линию принимается нижняя граница элемента.
+                    - bottom      - выравнивает по нижней части элемента.
+                    - middle      - выравнивание средней точки элемента по базовой линии родителя.
+                    - sub         - отображается как подставочный.
+                    - super       - элемент отображается в виде верхнего индекса.
+                    - text-bottom - нижняя граница элемента выравнивается по нижнему краю текущей строки.
+                    - text-top    - верхняя граница элемента выравнивается по самому высокому текстовому элементу.
+                    - top         - выравнивание верхнего края элемента по верху самого высокого элемента строки.
+            */
+            vertical-align: bottom;
+        }
+
+        .two {
+            vertical-align: sub;
+        }
+
+        .three {
+            vertical-align: super;
+        }
+
+        .four {
+            vertical-align: top;
+        }
+
+        .stress { font-size: 3em; }
+    </style>
+</head>
+<body>
+    <p>
+        <span>Normal</span>
+        <span class="one">bottom</span>
+        <span>Normal</span>
+        <span class="two">sub</span>
+        <span>Normal</span>
+        <span class="three">super</span>
+        <span>Normal</span>
+        <span class="four">text-top</span>
+        <span>Normal</span>
+    </p>
+</body>
+</html>

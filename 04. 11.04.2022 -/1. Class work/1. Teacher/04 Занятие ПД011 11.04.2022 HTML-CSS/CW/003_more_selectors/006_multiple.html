@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .class1 {
+            color: lightgreen;
+            font-size: 22pt;
+            background-color: black;
+        }
+        /*
+        Задаем стили, которые будут применятся к элементам с классом class2,
+        но поскольку перед именем класса установлен тег p, то стили будут
+        применяться только к параграфам с указанным классом.
+        */
+        p.class2 {
+            color: red;
+            font-size: 50px;
+        }
+
+        /*
+        !!! наследование !!!
+        Создаем новый селектор класс class3, который унаследует стили класса class1.
+        */
+        .class1.class3 {
+            font-style: italic;
+            padding: 10px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <p class="class1">Параграф, которому задан класс class1</p>
+
+    <span class="class1">Span, которому задан класс class1</span><br />
+
+    <p class="class2">Параграф с классом class2 - стили применяются</p>
+
+    <span class="class2">span, которому задан класс class2 - стили не применяются</span><br />
+
+    <p class="class1 class3">Параграф, к которому применены стили классов class1 class3</p>
+</body>
+</html>

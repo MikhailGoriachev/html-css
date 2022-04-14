@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Ширина элементов</title>
+    <style>
+        /*
+            Свойство width устанавливает ширину блочных или заменяемых элементов. Ширина не включает толщину границ вокрг элемента, значение отступов и полей.
+            В качестве единиц измерения можно задавать пиксели, дюймы, проценты пункты и другие допустимые единицы измерения в CSS.
+        */
+
+        .width {
+            width: 350px; /* значение auto устанавливает высоту исходя из содержимого. Попробовать изменить ширину и единицы измерения. */
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- В браузерах Opera и Internet Explorer высота может отображаться не корректно,
+    зависит также от версии браузера. -->
+    <p style="background-color: lightgoldenrodyellow;">
+        Обычный парграф.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut consequuntur culpa debitis
+        dignissimos eveniet harum hic in magni maxime necessitatibus nisi nobis, non nulla odit perferendis
+        repudiandae vitae? Soluta!
+    </p>
+
+    <p class="width">
+        Параграф, которому задана ширина.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos error eveniet placeat temporibus!
+        Aperiam beatae deserunt facilis, maxime nesciunt nulla obcaecati odit omnis provident, quod rem sed
+        veritatis voluptas.
+    </p>
+
+</body>
+</html>

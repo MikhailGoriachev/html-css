@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Свойство font-style</title>
+        <style>
+            p {
+                /* 
+                Свойство позволяет выбрать стиль начертания для текста.
+                Свойство имеет следующие значения:
+                    - italic - делает текст курсивом.
+                    - normal - обычное начертание.
+                    - oblique - наклонное начертание шрифта.
+                Разница между italic и oblique заключается в том, что курсивное
+                начертание добавляет небольшие изменения в структуру каждой буквы,
+                в то время как наклонный текст представляет собой наклонную версию
+                прямого текста.
+                Наследуется!
+            */
+                font-style: oblique;
+            }
+
+            .italic {
+                font-style: italic;
+            }
+
+            .oblique {
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Свойство font-style</h3>
+        <p>
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+            scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut
+            laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+        <p>
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+            scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut
+            laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+
+        <p class="italic">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            culpa enim eum ex excepturi iusto repellendus sint voluptates.
+            Dignissimos iusto libero nam placeat sapiente! Deserunt quas
+            quisquam sed voluptas voluptate?
+        </p>
+
+        <p class="oblique">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            accusantium ad eaque esse exercitationem iste, officiis quibusdam
+            rerum totam voluptates! Animi distinctio facere illum in labore nisi
+            repellendus tempore voluptatem.
+        </p>
+    </body>
+</html>

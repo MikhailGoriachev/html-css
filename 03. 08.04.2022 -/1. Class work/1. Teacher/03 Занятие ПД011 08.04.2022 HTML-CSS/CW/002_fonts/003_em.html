@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Единица измерения em</title>
+        <style>
+             html,
+             body {
+                 font-size: 14px;
+             }
+             .outer {
+                 font-size: 14px;
+             }
+             /* em пересчитывается для контейнера при изменении размера шрифта в контейнере
+            rem не пересчитывается
+            */
+             .inner {
+                 font-size: 2rem; /* 28px */
+                 width: 20rem; /* => 1em 28px */
+                 height: 5rem;
+                 background-color: lightgreen;
+        </style>
+    </head>
+    <body>
+        <h3>Единица измерения rem</h3>
+        <div class="outer">
+            Это элемент DIV.
+            <p class="inner">Это параграф, вложенный в DIV.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*
+        Дочерний селектор
+        Селектор применяет стили только к тем элементам, которые
+        являются непосредственно дочерними, непосредственными потомками */
+        p > span{
+            color: lightgoldenrodyellow;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <span>Span внутри параграфа</span> integer eu augue <span>span внутри параграфа</span> nunc
+            elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula
+            ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+        <span>
+            Span внутри тега  DIV.
+        </span>
+    </div>
+    <div>
+        <p>Текст параграфа
+            <span>
+                Span внутри параграфа.
+            </span>
+            Текст параграфа
+            <div>
+                <span>
+                    Span внутри Div.
+                </span>
+            </div>
+            Текст параграфа
+        </p>
+    </div>
+</body>
+</html>

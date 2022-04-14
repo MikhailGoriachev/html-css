@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>background-attachment</title>
+    <style>
+        div {
+            width: 450px;
+            height: 350px;
+
+            /* поведение контейнера при переполнении */
+            overflow-x: hidden;
+            overflow-y : scroll;
+
+            /* переносы слов при переполнении контента по ширине */
+            word-wrap: break-word;
+
+            background-image:url(img/drops.jpg);
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+
+            /*
+                Свойство background-attachment позволяет фиксировать фоновое изображение при прокрутке страницы. 
+				Может иметь следующие значения:
+                    - fixed  - делает фоновое изображение неподвижным.
+                    - scroll - позволяет перемещаться фону вместе с содержимым.
+                    - local  - фон фиксируется с учетом поведения элемента. Если элемент имеет прокрутку - фон 
+					           прокручивается с содержимым, но фон выходящий за рамки элемента, остается на месте.
+            */
+            background-attachment: fixed; /* чем отличается scroll, fixed */
+
+            /*
+            Пилюгин Данил — Сегодня, в 17:15
+            https://fls.guru/cssbackground.html нашел, даже с примером есть
+            */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+
+    <div>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.
+        Fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget.
+        Sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla.
+        Vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo.
+        Eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst ut arcu enim, dictum quis ultrices id, sagittis eget nulla.
+        Sed nunc mi, congue ut ultricies ac, varius a eros donec porttitor, libero fermentum fringilla laoreet, eros arcu sodales ante, ut dictum risus lectus vel quam integer ultricies, nunc eget.
+        Elementum euismod, orci enim vestibulum orci, nec suscipit urna odio et tellus suspendisse suscipit orci sit amet sem venenatis nec lobortis sem suscipit nullam nec imperdiet velit mauris eu nisi.
+        A felis imperdiet porta at ac nulla vivamus faucibus felis nec dolor pretium eget pellentesque dolor suscipit maecenas vitae enim arcu, at tincidunt nunc pellentesque eleifend vulputate lacus, vel semper.
+        Sem ornare sit amet proin sem sapien, auctor vel faucibus id, aliquet vitae ipsum etiam auctor ultricies ante, at dapibus urna viverra sed nullam mi arcu, tempor vitae interdum a.
+    </div>
+
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem molestiae repudiandae! Cumque ducimus facilis necessitatibus reprehenderit sapiente sit vel voluptate. Culpa ex fuga illum neque qui veniam? Et, ipsam.</span><span>Ab asperiores culpa cupiditate delectus dolorem, doloribus earum eos esse et exercitationem fugiat iste itaque iure, non officiis optio quae quod quos reiciendis sit, tempore tenetur ut voluptas! Accusamus, vitae.</span><span>Est fuga libero maxime natus nesciunt optio quas quis saepe sed velit. Ab amet architecto dolores voluptas. Aliquid debitis delectus dolorum, ducimus exercitationem fuga minima molestias, repellat rerum veritatis vero?</span><span>Hic nulla rem soluta tempore. Consequuntur labore molestiae natus nesciunt voluptate. Amet atque, blanditiis dignissimos distinctio doloribus explicabo nostrum provident sequi. A consectetur eaque eveniet facere libero praesentium rem, veniam.</span><span>Delectus dolore expedita, nulla odit praesentium qui quibusdam quod ratione sit unde? Dicta eligendi exercitationem laudantium nesciunt nisi nostrum sequi. Maiores natus quasi vel? Debitis deleniti fugiat nostrum pariatur similique?</span>
+    </p>
+
+</body>
+</html>
