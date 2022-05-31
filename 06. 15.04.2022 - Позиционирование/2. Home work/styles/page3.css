@@ -1,0 +1,101 @@
+/* Стили страницы "Чукотский округ" (index.html) */
+
+html,
+body {
+    font-size: 10pt;
+}
+
+/* секция */
+main section {
+    font-size: 1.1rem;
+    font-family: Calibri, sans-serif;
+}
+
+/* заголовки 2-уровня */
+main section h2 {
+    display: inline-block;
+
+    font-size: 1.3rem;
+    font-family: Cambria, serif;
+    color: #4f81bd;
+    margin: 1rem 0 0;
+}
+
+/* заголовки 3-уровня */
+main section h3 {
+    display: inline-block;
+
+    font-size: 1.1rem;
+    font-family: Cambria, serif;
+    color: #4f81bd;
+    margin: 1rem 0 0;
+}
+
+/* абзацы */
+main section p {
+    margin: 0 0 1rem 1.27cm;
+}
+
+/* списки */
+main section ul {
+    margin: 0;
+    list-style-position: inside;
+}
+
+/* элементы списка */
+main section li {
+    padding-top: 0.2rem;
+}
+
+/* первый список */
+.first-list {
+    list-style-image: url(../images/marker-1.png);
+}
+
+/* второй список */
+.second-list {
+    list-style-type: upper-roman;
+
+    list-style-position: outside;
+
+    margin-left: 0cm;
+}
+
+/* третий список */
+.third-list {
+    list-style-image: url(../images/marker-2.png);
+}
+
+/* таблица */
+table {
+    border-collapse: collapse;
+    border: 3px solid #000;
+    width: 599px;
+    margin: 18px;
+}
+
+/* ячейки */
+table td {
+    border: 3px solid #000;
+    height: 34px;
+}
+
+/* размер ячеек 1-го столбца */
+td.first-column {
+    width: 163px;
+}
+
+/* размер ячеек 2-го столбца */
+td.second-column {
+    width: 160px;
+}
+
+/* размер ячеек 3-го столбца */
+td.third-column {
+    width: 132px;
+}
+
+/* размер ячеек 4-го столбца */
+td.four-column {
+    width: 145px;
+}

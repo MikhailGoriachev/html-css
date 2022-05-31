@@ -1,0 +1,99 @@
+/* Стили страницы "Вариант 15" (page3.html) */
+
+/* образец */
+.sample {
+    margin-bottom: 3rem;
+    width: 60vw;
+}
+
+.sample h2 {
+    text-align: center;
+}
+
+/* изображение образца */
+.sample img {
+    width: 100%;
+    height: 22.8vw;
+}
+
+/* #region Результат */
+.result {
+    text-align: center;
+    width: 60vw;
+}
+
+/* таблица */
+.result table {
+    width: 100%;
+    height: 22.8vw;
+    border-collapse: collapse;
+    border: 3px solid #000;
+}
+
+/* ячейка таблицы */
+.result table td {
+    border: 3px solid #000;
+}
+
+/* 
+    572px x 210px 
+    100%  x 38%
+
+    tr:
+    1.  50px    23%
+    2.  50px    23%
+    3.  35px    16%
+    4.  35px    16%
+    5.  37px    17%
+
+    td:
+    1.  118px   20%
+    2.  131px   22%
+    3.  91px    15%
+    4.  88px    15%
+    5.  144px   25%
+*/
+
+/* 1-я и 2-я строки */
+.result table tr:nth-of-type(1),
+.result table tr:nth-of-type(2) {
+    height: 23%;
+}
+
+/* 3-я и 4-я строки */
+.result table tr:nth-of-type(3),
+.result table tr:nth-of-type(4) {
+    height: 16%;
+}
+
+/* 5-я строка */
+.result table tr:nth-of-type(5) {
+    height: 17%;
+}
+
+/* 1-я ячейка */
+.first-td {
+    width: 20%;
+}
+
+/* 20+22+15+15+25=97 */
+
+/* 2-я ячейка */
+.second-td {
+    width: 22%;
+}
+
+/* 3-я и 4-я ячейки */
+.third-td {
+    width: 17%;
+}
+.four-td {
+    width: 15%;
+}
+
+/* 5-я ячейка */
+.five-td {
+    width: 25%;
+}
+
+/* #endregion */

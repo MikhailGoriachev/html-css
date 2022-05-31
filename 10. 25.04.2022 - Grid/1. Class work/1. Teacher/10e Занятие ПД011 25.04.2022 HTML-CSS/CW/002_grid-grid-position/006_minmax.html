@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Minmax function</title>
+    <meta charset="utf-8" />
+    <style>
+        .grid {
+            /*Grid разметка контейнера*/
+            display: grid;
+            /*При изменении размера - 1я колонка будет ужиматься до 150px. По умолчанию 250px */
+            grid-template-columns: minmax(150px, 250px) 1fr 1fr;                 
+            grid-gap: 25px;
+
+             /*При изменении размера - 1я строка будет ужиматься до 300px, при старте отображения 500px */
+            grid-template-rows:minmax(300px, 500px) 200px 200px;
+            background-color: lightgray;
+
+            height: 1100px;
+        }
+
+        .grid div {
+            background-color: darkcyan;
+            border: 1px solid black;
+
+            border-radius: 5px;
+            padding: 8px 15px;
+
+            color: white;
+            font-size: 18px;
+        }
+
+        .grid div:nth-child(odd) {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+        <div>Tincidunt integer eu augue augue nunc elit dolor,iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</div>
+        <div>item-2</div>
+        <div>item-3</div>
+        <div>item-4</div>
+        <div>item-5</div>
+        <div>item-6</div>
+        <div>item-7</div>
+        <div>item-8</div>
+        <div>item-9</div>
+        <div>item-10</div>
+    </div>
+</body>
+</html>

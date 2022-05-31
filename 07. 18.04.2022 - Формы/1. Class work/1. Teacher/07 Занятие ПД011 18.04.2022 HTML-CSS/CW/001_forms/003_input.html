@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Стиизованная форма</title>
+    <style>
+        /* стили для формы */
+        .form {
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        /* стили для label */
+        .label {
+            display: inline-block;
+            width: 70px;
+        }
+
+        /* div - группы элементов формы*/
+        .group-control {
+            padding-top: 12px;
+            padding-bottom: 6px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Пример формы со стилями</h1>
+
+    <!-- Для создания описания полей используются элементы label.
+    Метка связывается с полем посредством атрибута id. -->
+    <form class="form" action="" method="post" enctype="text/plain">
+        <!-- fieldset: рамка вокруг группы полей формы-->
+        <fieldset>
+            <legend>Вход пользователя</legend>
+            <!--
+            label:
+            атрибут accesskey позволяет установить комбинацию горячих клавиш,
+            нажав на которые поле становится активным, то есть получает фокус.-->
+            <div class="group-control">
+                <label class="label" for="id_login" accesskey="l">Логин: </label>
+                <input type="text" name="login" id="id_login" />
+            </div>
+
+            <div class="group-control">
+                <label class="label" for="id_pass" accesskey="p">Пароль:</label>
+                <input type="password" name="pass" id="id_pass"/>
+            </div>
+        </fieldset>
+
+        <div class="group-control">
+            <!--
+                input с типом submit отправляет данные на страницу, указанную
+                в атрибуте action тега form.
+                input с типом reset сбрасывает значение всех элементов формы
+                в начальное состояние.
+              -->
+            <input type="submit" value="Отправить"/>
+            <input type="reset" value="Сбросить"/>
+        </div>
+
+    </form>
+</body>
+</html>

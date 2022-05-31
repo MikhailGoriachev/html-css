@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+
+        <!-- #region Стили -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <!-- #endregion -->
+
+        <!-- #region Шрифты -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- #endregion -->
+
+        <!-- Иконка -->
+        <link rel="shortcut icon" href="images/logo.png" type="image/icon" />
+
+        <title>Главная</title>
+    </head>
+    <body>
+        <!-- Аерхняя точка сайта (нужна, чтоб подняться в самое начало страницы) -->
+        <div id="top"></div>
+
+        <!-- #region Заголовок -->
+        <header>
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" />
+                <h2>Home Work</h2>
+            </a>
+        </header>
+        <!-- #endregion -->
+
+        <!-- #region Навигация-->
+        <nav>
+            <ul>
+                <!-- Главная -->
+                <li>
+                    <a href="index.html" class="select-tab">
+                        <img src="images/home_black.svg" alt="home" />
+                        Главная
+                    </a>
+                </li>
+
+                <!-- Вариант 6 -->
+                <li>
+                    <a href="htdocs/page1.html">
+                        <img src="images/one.svg" alt="one" />
+                        Вариант 6
+                    </a>
+                </li>
+
+                <!-- Вариант 8 -->
+                <li>
+                    <a href="htdocs/page2.html">
+                        <img src="images/two.svg" alt="two" />
+                        Вариант 8
+                    </a>
+                </li>
+
+                <!-- Чукотский округ -->
+                <li>
+                    <a href="htdocs/page3.html">
+                        <img src="images/three.svg" alt="three" />
+                        Чукотский округ
+                    </a>
+                </li>
+
+                <!-- Крупные города -->
+                <li>
+                    <a href="htdocs/page4.html">
+                        <img src="images/four.svg" alt="three" />
+                        Крупные города
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- #endregion -->
+
+        <!-- #region Контент -->
+        <main>
+            <section>
+                <!-- #region Теоретическая часть -->
+                <article>
+                    <details open>
+                        <summary><h2>Теоретическая часть</h2></summary>
+                        <!-- список -->
+                        <ul>
+                            <li>Отступы внешние и внутренние</li>
+                            <li>Позиционирование на страницах: <b>relative</b>, <b>absolute</b>, <b>fixed</b></li>
+                            <li><b>Z-</b>позиционирование</li>
+                            <li>
+                                Знакомство с видами верстки: табличная, блочная, фиксированная и резиновая, смешанная
+                            </li>
+                            <li>Новые теги HTML5</li>
+                            <li>Теги семантической верстки HTML5</li>
+                            <li>Теги для воспроизведения аудио и видео в HTML5</li>
+                        </ul>
+                    </details>
+                </article>
+                <!-- #endregion -->
+
+                <!-- #region Практическая часть -->
+                <article>
+                    <details open>
+                        <summary><h2>Практическая часть</h2></summary>
+
+                        <p>Разработайте набор веб-страниц по следующему заданию.</p>
+
+                        <p>
+                            <b>Важно</b>: при помощи внешних стилей, семантических тегов <b>HTML5</b>, фиксированного
+                            размещения реализуйте дизайн:
+                        </p>
+
+                        <!-- 1-й уровень списка -->
+                        <ul>
+                            <li>в верхнем блоке размещайте название страницы</li>
+
+                            <li>
+                                в левом боковом блоке – навигация по страницам, используйте псевдоклассы для пунктов
+                                меню по рассмотренным на занятии примерам
+                            </li>
+
+                            <li>
+                                в центральном блоке размещайте контент страницы. Шаблоны для контента страниц:
+
+                                <!-- 2-й уровень списка -->
+                                <ul>
+                                    <li>
+                                        <b>Первая страница</b> – вариант 6 на позиционирование из
+                                        <a
+                                            href="http://web-verstka.ru/uchebnyie-kursyi/uroki-html-i-css/kontrolnoe-zadanie-po-blochnoj-verstke.html"
+                                            target="_blank"
+                                            >этого задания</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <b>Вторая страница</b> – вариант 8 на позиционирование из
+                                        <a
+                                            href="http://web-verstka.ru/uchebnyie-kursyi/uroki-html-i-css/kontrolnoe-zadanie-po-blochnoj-verstke.html"
+                                            target="_blank"
+                                            >этого задания</a
+                                        >
+                                    </li>
+
+                                    <li><b>Третья страница</b> – page3.docx из папки <b>templates</b></li>
+                                    <li><b>Четвертая страница</b> – page4.docx из папки <b>templates</b></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                в нижнем блоке – данные о разработчике: фамилия и имя, группа, город, год разработки,
+                                адрес e-mail в формате ссылки
+                            </li>
+                        </ul>
+
+                        <p>При разработке оформления контента используйте изученные возможности HTML5, CSS3.</p>
+                    </details>
+                </article>
+                <!-- #endregion -->
+
+                <!-- #region Дополнение -->
+                <article>
+                    <details open>
+                        <summary><h2>Дополнение</h2></summary>
+                        <p>
+                            Запись занятия можно скачать по
+                            <a href="https://cloud.mail.ru/public/4Vkm/eWwWp6WdS" target="_black"> этой ссылке</a>.
+                            Материалы занятия – в этом же архиве.
+                        </p>
+                    </details>
+                </article>
+                <!-- #endregion -->
+            </section>
+
+            <!-- Ссылка "Вверх" -->
+            <a href="#top" class="goto-top"><img src="images/arrow_up_black.svg" alt="" /></a>
+        </main>
+        <!-- #endregion -->
+
+        <!-- #region Подвал страницы -->
+        <footer>
+            <!-- <span>Сведения о странице:</span> -->
+            <!-- <p> -->
+            <span>
+                Разработчик:
+                <a href="https://github.com/MikhailGoriachev" target="_bank"> Горячев Михаил </a>
+            </span>
+            <span>Группа: ПД011</span>
+            <span>Город: Донецк</span>
+            <span>Год создания: 2022</span>
+            <span>
+                Поддержка:
+                <a href="mailto:goriachevmichael@gmail.com">goriachevmichael@gmail.com</a>
+            </span>
+            <!-- </p> -->
+        </footer>
+        <!-- #endregion -->
+    </body>
+</html>

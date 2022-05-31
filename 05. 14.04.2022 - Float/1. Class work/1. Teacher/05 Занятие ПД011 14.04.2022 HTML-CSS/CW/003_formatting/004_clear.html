@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        /*
+                Попробовать изменить left на right у всех элементов, а затем у одного.
+        */
+        #elem1 {
+            background-color: red;
+        }
+
+        #elem2 {
+            background-color: green;
+        }
+
+        #elem3 {
+            background-color: cornflowerblue;
+            clear: left; /* отмена float: left */
+        }
+
+        #elem4 {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div id="elem1"></div>
+    <div id="elem2"></div>
+    <div id="elem3"></div>
+    <div id="elem4"></div>
+
+    <hr style="clear:both; "></hr>
+
+    <h3>Заголовок</h3>
+</body>
+</html>

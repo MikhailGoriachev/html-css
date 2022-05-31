@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Пример верстки контента с использованием float</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color : lightgray;
+        }
+
+        .content {
+            width: 100%;
+            height: 400px;
+            background-color: lavender;
+
+            overflow: auto;
+        }
+
+        .left-bar {
+            width: 30%;
+            height: 400px;
+            background-color: lightseagreen;
+            float: left;
+        }
+
+        .main {
+            width: 50%;
+            height: 400px;
+            background-color: lightcyan;
+            float: left;
+        }
+
+        .right-bar {
+            width: 20%;
+            height: 400px;
+            background-color: lightseagreen;
+            float: left;
+        }
+
+        .footer {
+            width: 100%;
+            height: 100px;
+            background-color: lightsteelblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Заголовок</h1>
+    </div>
+
+    <div class="content">
+        <div class="left-bar">
+            <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, earum eum ex excepturi impedit minima nobis odit, quia quibusdam quod saepe sapiente sed sit sunt ut vero voluptatum. Distinctio, quod?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, earum eum ex excepturi impedit minima nobis odit, quia quibusdam quod saepe sapiente sed sit sunt ut vero voluptatum. Distinctio, quod?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, earum eum ex excepturi impedit minima nobis odit, quia quibusdam quod saepe sapiente sed sit sunt ut vero voluptatum. Distinctio, quod?</p>
+        </div>
+
+        <div class="right-bar">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa est iste laborum molestiae praesentium quam quisquam repellat tempore. Atque blanditiis distinctio excepturi hic iure neque non reprehenderit vel veniam.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>Текст футера</h4>
+    </div>
+</body>
+</html>

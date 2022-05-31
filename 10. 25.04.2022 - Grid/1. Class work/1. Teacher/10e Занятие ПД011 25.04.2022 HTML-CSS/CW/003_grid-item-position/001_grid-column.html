@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Column position</title>
+    <meta charset="utf-8" />
+    <style>
+        .grid {
+            display: grid;
+
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 50px);
+
+            grid-gap: 10px;
+            background-color: lightgray;
+        }
+
+        /* расположение одного элемента в разметке сеток 5-1=4. элемент занимает 4 места */
+        /* раскомментировать */
+        .grid div:nth-child(1) {
+            grid-column-start: 1;    /* Начало расположения (включется) */
+            grid-column-end: 5;      /* Конец расположения  (исключается) */
+
+            /*grid-column-end:-1;*/
+            /*Сокращенная запись*/
+            /*grid-column: 1/5;*/
+        }
+
+        .grid div {
+            background-color: darkcyan;
+            border: 1px solid black;
+
+            border-radius: 5px;
+            padding: 8px 15px;
+
+            color: white;
+            font-size: 18px;
+        }
+
+        .grid div:nth-child(odd) {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>Item-1</div>
+        <div>item-2</div>
+        <div>item-3</div>
+        <div>item-4</div>
+        <div>item-5</div>
+        <div>item-6</div>
+        <div>item-7</div>
+        <div>item-8</div>
+        <div>item-9</div>
+        <div>item-10</div>
+        <div>item-11</div>
+    </div>
+</body>
+</html>

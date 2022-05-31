@@ -1,0 +1,130 @@
+/* Стили страницы "Крупные города" (page4.html) */
+
+/* секция */
+main section {
+    font-family: Calibri, sans-serif;
+    font-size: 1.1rem;
+}
+
+/* заголовки 2-уровня */
+main section h2 {
+    display: inline-block;
+
+    font-size: 1.3rem;
+    font-family: Cambria, serif;
+    color: #4f81bd;
+}
+
+/* абзацы */
+main section p {
+    margin: 0 0 1rem;
+}
+
+/* #region Первая таблица */
+.first-table {
+    border-collapse: collapse;
+    width: 66%;
+}
+
+/* заголвки */
+.first-table th {
+    background-color: #8064a2;
+
+    text-align: left;
+    vertical-align: text-top;
+    padding: 0 0.19cm;
+    color: white;
+}
+
+/* 1-й столбец */
+.first-table th:nth-child(1) {
+    width: 5%;
+}
+
+/* 2-й столбец */
+.first-table th:nth-child(2) {
+    width: 21%;
+}
+
+/* 3-й столбец */
+.first-table th:nth-child(3) {
+    width: 16%;
+}
+
+/* 4-й столбец */
+.first-table th:nth-child(4) {
+    width: 8%;
+}
+
+/* 5-й столбец */
+.first-table th:nth-child(5) {
+    width: 32%;
+}
+
+/* 6-й столбец */
+.first-table th:nth-child(6) {
+    width: 10%;
+}
+
+/* ячейки */
+.first-table td {
+    padding: 0 0.19cm;
+    vertical-align: text-top;
+
+    border: 1px solid #fff;
+}
+
+/* первая ячейка в строке */
+.first-table tr td:first-child {
+    background-color: #8064a2;
+    color: #fff;
+    font-weight: bolder;
+
+    border-left: 0;
+}
+
+/* последняя ячейка в строке */
+.first-table tr td:last-child {
+    border-right: 0;
+}
+
+/* четные строки */
+.first-table tr:nth-of-type(even) {
+    background-color: #e5dfec;
+}
+
+/* нечетные строки */
+.first-table tr:nth-last-of-type(odd) {
+    background-color: #ccc0d9;
+}
+
+/* #endregion */
+
+/* #reigon Таблица изображений городов */
+
+/* ячейки */
+.second-table td {
+    height: 5cm;
+    width: 8.32cm;
+    padding: 0 0.095cm;
+}
+
+/* 1-я и 2-я чейка 1-й строки */
+.second-table tr:first-child td:first-child img,
+.second-table tr:first-child td:last-child img {
+    height: 4.45cm;
+    width: 7.94cm;
+}
+
+/* 1-я чейка 2-й строки */
+.second-table tr:last-child td:first-child img {
+    height: 4.82cm;
+    width: 7.91cm;
+}
+
+/* 2-я чейка 2-й строки */
+.second-table tr:last-child td:last-child img {
+    height: 4.84cm;
+    width: 7.86cm;
+}
+/* #endregion */

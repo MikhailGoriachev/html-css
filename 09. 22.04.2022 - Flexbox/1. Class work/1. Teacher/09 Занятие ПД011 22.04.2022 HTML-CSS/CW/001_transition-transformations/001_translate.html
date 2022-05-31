@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Translate</title>
+
+    <style>
+        body {
+            padding: 100px;
+        }
+
+        /* для удобства */
+        img {
+            position: absolute;
+            border: solid 1px black;
+        }
+
+        img {
+            -moz-transition: all 3s;
+            -o-transition: all 3s;
+            -webkit-transition: all 3s;
+
+            /* анимация любого изменяющегося свойства */
+            transition: all 3s;
+        }
+
+        img:hover {
+            -moz-transform: translate(100px, 50px);
+            -ms-transform: translate(100px, 50px);
+            -o-transform: translate(100px, 50px);
+            -webkit-transform: translate(100px, 50px);
+            transform: translate(100px, 50px); /* перемещение элемента на 100px по X и на 50px по Y*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Наведите курсор на картинку</h1>
+    <img src="front.jpg" alt="King Of Hearts" />
+</body>
+</html>

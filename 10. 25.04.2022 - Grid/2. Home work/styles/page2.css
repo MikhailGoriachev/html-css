@@ -1,0 +1,168 @@
+/* Страница "Форма: приём" (page2.html) */
+
+/* поля формы */
+.fields {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+
+    display: flexbox;
+
+    /* box-flex: 1; */
+
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+
+    -moz-box-pack: justify;
+    -webkit-box-pack: justify;
+    box-pack: justify;
+
+    font-size: 1.1rem;
+
+    width: 100%;
+}
+
+/* левая и правая колонки полей */
+.fields-left,
+.fields-right {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+
+    display: flexbox;
+
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+
+    padding: 1rem;
+}
+
+/* группы контролов для ввода данных */
+.group-control {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+
+    display: flexbox;
+
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    /* 
+    border-radius: 1rem;
+    border: 1px solid #000;
+    padding: 1rem; */
+
+    margin: 0 0 1rem;
+    /* background-color: blueviolet; */
+}
+
+/* элементы ввода */
+.group-control > * {
+    display: block;
+    margin: 0.2rem;
+}
+
+/* поля для ввода */
+input,
+textarea,
+select {
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+}
+
+/* контроллы для ввода */
+.group-control input[type='text'],
+.group-control input[type='datetime-local'],
+.group-control input[type='tel'],
+.group-control textarea,
+.group-control select {
+    outline: 2px solid gray;
+    transition: outline 0.5s, outline-color 0.3s ease-out;
+}
+
+/* наведение на элемент */
+.group-control input[type='text']:hover,
+.group-control input[type='datetime-local']:hover,
+.group-control input[type='tel']:hover,
+.group-control textarea:hover,
+.group-control select:hover {
+    outline: 2px solid #2847ad;
+}
+
+/* элемент в фокусе */
+.group-control input[type='text']:focus,
+.group-control input[type='datetime-local']:focus,
+.group-control input[type='tel']:focus,
+.group-control textarea:focus,
+.group-control select:focus {
+    outline: 2px solid rgb(21, 175, 129);
+}
+
+/* подсказки для ввода */
+.group-control label:first-of-type {
+    padding-left: 0.3rem;
+    font-weight: bold;
+}
+
+/* элементы для выбора данных */
+.group-control input[type='datetime-local'],
+.group-control input[type='checkbox'],
+.group-control label,
+.group-control select {
+    cursor: pointer;
+}
+
+/* поле блок ввода симптовом */
+.group-control textarea {
+    box-sizing: border-box;
+}
+
+/* чек-боксы */
+.control-checkbox {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* заголвок формы */
+form > h2 {
+    text-align: center;
+
+    margin: 0 0 1rem;
+}
+
+/* кнопки формы */
+.buttons-control button {
+    border-radius: 2rem;
+    border: 0;
+
+    background-color: #2847ad;
+    color: #fff;
+
+    margin: 1rem;
+
+    width: 10rem;
+    height: 3rem;
+
+    transition: all 0.3s ease-out;
+
+    cursor: pointer;
+}
+
+/* наведение на кнопку */
+.buttons-control button:hover {
+    background-color: #0b2475;
+}
+
+/* нажатие на кнопку */
+.buttons-control button:active {
+    background-color: #0b1536;
+}

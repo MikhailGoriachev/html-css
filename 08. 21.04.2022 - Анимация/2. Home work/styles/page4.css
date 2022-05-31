@@ -1,0 +1,61 @@
+/* Стили страницы "Форма 2" (page4.html) */
+
+/* форма */
+section form {
+    font-size: 1rem;
+    color: #555555;
+    padding: 0 15px 15px 10px;
+    width: 60%;
+
+    border: 5px solid #d7d7d7;
+    border-radius: 3px;
+}
+
+/* заголовки формы */
+section form h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* группа контролов для ввода данных */
+.group-control {
+    margin-bottom: 1.2rem;
+}
+
+/* поле для ввода строки */
+.group-control input {
+    border: 1px solid #abadb3;
+}
+
+/* блок ввода текста сообщения */
+.group-control-message {
+    margin-bottom: 2rem;
+}
+
+/* контролы для ввода текста сообщения */
+.group-control-message * {
+    display: block;
+}
+
+/* поле для ввода текста сообщения */
+.group-control-message textarea {
+    border: 1px solid #abadb3;
+    width: 100%;
+    /* margin-right: 40px; */
+    height: 5rem;
+}
+
+/* кнопки */
+.group-control input[type='submit'] {
+    margin: 0.5rem 0.3rem 0 0;
+
+    border: 1px solid rgb(112, 112, 112);
+    background: linear-gradient(180deg, #eee 45%, #ddd 0, #bbb);
+}
+
+/* наведегние на кнопку */
+.group-control input[type='submit']:hover {
+    border-color: #72a2c5;
+    background: linear-gradient(180deg, #e5f4fd 45%, #b3e0f9 0);
+}

@@ -1,0 +1,59 @@
+/* Стили страницы "Главная" (index.html) */
+
+/* заголовки details */
+summary h2 {
+    display: inline-block;
+}
+
+/* надписи и строки для ввода */
+.form-section label,
+.form-section input {
+    display: block;
+}
+
+.form-section input {
+    font-size: 1.1rem;
+    padding: 3px;
+}
+
+/* кнопка "отправить" */
+.form-section input[type='submit'] {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+/* #endregion */
+
+/* #region текстовая секция */
+main section {
+    font-family: Calibri, sans-serif;
+    font-size: 1.4rem;
+}
+
+/* заголовки h2 */
+main section h2 {
+    color: #76abee;
+    font-size: 1.6rem;
+    font-family: 'Calibri Light', sans-serif;
+
+    margin: 1.2rem 0 0;
+}
+
+/* абзацы */
+.text-section p {
+    margin: 0 0 0.8rem;
+    text-align: justify;
+}
+
+/* элементы списка */
+.text-section ul {
+    margin: 0 0 0.8rem 0;
+}
+
+/* последний секции details */
+.text-section details :last-child {
+    margin-bottom: 0;
+}
+
+/* #endregion */

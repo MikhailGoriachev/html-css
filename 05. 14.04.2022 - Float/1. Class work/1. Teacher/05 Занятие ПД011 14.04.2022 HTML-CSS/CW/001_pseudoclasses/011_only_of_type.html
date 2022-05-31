@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Псевдокласс :only-of-type применяется к дочернему элементу указанного типа,
+        только если он единственный у родителя. CSS3 */
+        p:only-of-type {
+            border: 5px double darkorchid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p> <!--удалите данный параграф-->
+    </div>
+
+    <div>
+        <p>Paragraph 1</p>
+    </div>
+
+    <div>
+        <span>Span 1</span>
+        <p>Paragraph 1</p>
+        <!-- раскомментировать для демонстрации-->
+<!--        <p>Paragraph 2</p>-->
+        <ul>
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+            <li>Пункт 3</li>
+        </ul>
+    </div>
+</body>
+</html>

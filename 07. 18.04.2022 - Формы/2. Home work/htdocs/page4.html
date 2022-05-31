@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+
+        <!-- #region Стили -->
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/page4.css" />
+        <!-- #endregion -->
+
+        <!-- #region Шрифты -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- #endregion -->
+
+        <!-- Иконка -->
+        <link rel="shortcut icon" href="../images/logo.png" type="image/icon" />
+
+        <title>Форма 2</title>
+    </head>
+    <body>
+        <!-- #region Заголовок -->
+        <header>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>Home Work</h2>
+
+                <!-- Название страницы -->
+                <h3>Форма 2</h3>
+            </a>
+        </header>
+        <!-- #endregion -->
+
+        <!-- #region Навигация-->
+        <nav>
+            <ul>
+                <!-- Главная -->
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/home_black.svg" alt="home" />
+                        Главная
+                    </a>
+                </li>
+
+                <!-- Вариант 7 -->
+                <li>
+                    <a href="page1.html">
+                        <img src="../images/one.svg" alt="one" />
+                        Вариант 7
+                    </a>
+                </li>
+
+                <!-- Вариант 9 -->
+                <li>
+                    <a href="page2.html">
+                        <img src="../images/two.svg" alt="two" />
+                        Вариант 9
+                    </a>
+                </li>
+
+                <!-- Вариант 15 -->
+                <li>
+                    <a href="page3.html">
+                        <img src="../images/three.svg" alt="three" />
+                        Вариант 15
+                    </a>
+                </li>
+
+                <!-- Форма 2 -->
+                <li>
+                    <a href="page4.html" class="select-tab">
+                        <img src="../images/four.svg" alt="three" />
+                        Форма 2
+                    </a>
+                </li>
+
+                <!-- Форма 3 -->
+                <li>
+                    <a href="page5.html">
+                        <img src="../images/five.svg" alt="five" />
+                        Форма 3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- #endregion -->
+
+        <!-- #region Контент -->
+        <main>
+            <section>
+                <form action="#" method="post">
+                    <h2>Форма обратной связи</h2>
+
+                    <!-- Поле "Ваше имя" -->
+                    <div class="group-control">
+                        <input type="text" name="name" id="name_id" required />
+                        <label for="name_id">Ваше имя</label>
+                    </div>
+
+                    <!-- Поле "Электронная почта" -->
+                    <div class="group-control">
+                        <input type="email" name="email" id="email_id" required />
+                        <label for="email_id">Электронная почта</label>
+                    </div>
+
+                    <!-- Поле "Тема сообщения" -->
+                    <div class="group-control">
+                        <input type="text" name="subject" id="subject_id" />
+                        <label for="subject_id">Тема сообщения</label>
+                    </div>
+
+                    <!-- Поле "Текст сообщения" -->
+                    <div class="group-control-message">
+                        <label for="message_id">Текст сообщения:</label>
+                        <textarea type="comment" name="message" id="message_id" required></textarea>
+                    </div>
+
+                    <!-- Кнопка "Отправить" -->
+                    <div class="group-control-button">
+                        <input type="submit" name="submit-button" value="Отправить" />
+                    </div>
+                </form>
+            </section>
+
+            <!-- Ссылка "Вверх" -->
+            <!-- <a href="#top" class="goto-top"><img src="../images/arrow_up_black.svg" alt="" /></a> -->
+        </main>
+        <!-- #endregion -->
+
+        <!-- #region Подвал страницы -->
+        <footer>
+            <!-- <span>Сведения о странице:</span> -->
+            <!-- <p> -->
+            <span>
+                Разработчик:
+                <a href="https://github.com/MikhailGoriachev" target="_bank"> Горячев Михаил </a>
+            </span>
+            <span>Группа: ПД011</span>
+            <span>Город: Донецк</span>
+            <span>Год создания: 2022</span>
+            <span>
+                Поддержка:
+                <a href="mailto:goriachevmichael@gmail.com">goriachevmichael@gmail.com</a>
+            </span>
+            <!-- </p> -->
+        </footer>
+        <!-- #endregion -->
+    </body>
+</html>

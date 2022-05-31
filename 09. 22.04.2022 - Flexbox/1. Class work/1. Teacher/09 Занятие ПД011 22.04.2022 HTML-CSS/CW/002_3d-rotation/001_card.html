@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Card rotation</title>
+    <style>
+        body {
+            padding: 100px;
+        }
+
+        /* для удобства */
+        img {
+            border: solid 1px black;
+        }
+
+        .card {
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; /* дочерние элементы должны отображаться в 3D пространстве */
+        }
+
+        .back, .front {
+            position: absolute;
+            width: 272px;
+            height: 380px;
+
+            /* анимирование изменений любых свойств  */
+            -moz-transition: all .8s;
+            -o-transition: all .8s;
+            -webkit-transition: all .8s;
+            transition: all .8s;
+        }
+
+        .back {
+            background-image: url(back.jpg);
+        }
+
+        .front {
+            background-image: url(front.jpg);
+            border: solid 1px black;
+
+            /* лицо карты исходно повернуто на 180deg - по правилу
+               .backface .front
+               буден\т невидимо
+            */
+            -moz-transform: rotate3d(0,1,0, 180deg);
+            -ms-transform: rotate3d(0,1,0, 180deg);
+            -o-transform: rotate3d(0,1,0, 180deg);
+            -webkit-transform: rotate3d(0,1,0, 180deg);
+            transform: rotate3d(0,1,0, 180deg);
+        }
+
+        /* правило back сработает при ховере на card, одновременно с .card:hover .front */
+        .card:hover .back {
+            -moz-transform: rotate3d(0,1,0, 180deg);
+            -ms-transform: rotate3d(0,1,0, 180deg);
+            -o-transform: rotate3d(0,1,0, 180deg);
+            -webkit-transform: rotate3d(0,1,0, 180deg);
+            transform: rotate3d(0,1,0, 180deg);
+        }
+
+        /* правило front сработает при ховере на card, одновременно с .card:hover .back */
+        .card:hover .front {
+            -moz-transform: rotate3d(0,1,0, 0deg);
+            -ms-transform: rotate3d(0,1,0, 0deg);
+            -o-transform: rotate3d(0,1,0, 0deg);
+            -webkit-transform: rotate3d(0,1,0, 0deg);
+            transform: rotate3d(0,1,0, 0deg);
+        }
+
+        /*
+           определяет будет ли видно контент элемента, который с помощью 3d
+           трансформаций отвернут лицом от пользователя
+        */
+        .backface .back, .backface .front {
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="card backface">
+        <div class="back"></div>
+        <div class="front"></div>
+    </div>
+</body>
+</html>

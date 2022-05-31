@@ -1,0 +1,110 @@
+/* Стили для страницы page1.html "Урал и западная Сибирь" */
+
+/* контент */
+.main-container {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* заголовки 2 уровня */
+.main-container h2 {
+    font-family: Cambria, serif;
+    font-size: 1.4rem;
+    color: #365f91;
+    margin: 2.4rem 0 0;
+}
+
+/* заголовки 3 уровня */
+.main-container h3 {
+    font-family: Cambria, serif;
+    font-size: 1.1rem;
+    color: #4f81bd;
+    margin: 1rem 0 0;
+}
+
+/* абзац контента */
+.main-container p {
+    font-family: Calibri, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    text-indent: 1.25cm;
+    text-align: left;
+}
+
+/* кажый четверый абзац */
+.main-container p:nth-of-type(3n + 1) {
+    font-weight: bold;
+    background-color: #d6e3bc;
+}
+
+/* последний абзац */
+.main-container p:last-of-type {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #c6d9f1;
+}
+
+/* общее оформление таблицы 1 и таблицы 2 */
+.table-first,
+.table-second {
+    border-collapse: collapse;
+    font-family: Calibri, sans-serif;
+    font-size: 1.1rem;
+    width: 15.32cm;
+}
+
+/* заголовки таблицы */
+th {
+    color: white;
+    padding: 0 0.19cm;
+}
+
+/* ячейки таблицы */
+td {
+    padding: 0 0.19cm;
+}
+
+/* таблица 1 */
+.table-first {
+    border: 1px solid #8064a2;
+}
+
+/* заголовки таблицы 1 */
+.table-first th {
+    background-color: #8064a2;
+}
+
+/* ячейки таблицы 1 */
+.table-first td {
+    border-top: 1px solid #8064a2;
+    border-left: 1px solid #8064a2;
+    border-right: 1px solid #8064a2;
+}
+
+/* нечетные строки таблицы */
+.table-first tr:nth-of-type(odd) {
+    background-color: #e5dfec;
+}
+
+/* таблица 2 */
+.table-second {
+    border: 1px solid #000;
+}
+
+/* заголовки таблицы 2 */
+.table-second th {
+    background-color: #000;
+}
+
+/* ячейки таблицы 2 */
+.table-second td {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+/* нечетные строки таблицы */
+.table-second tr:nth-of-type(odd) {
+    background-color: #ccc;
+}

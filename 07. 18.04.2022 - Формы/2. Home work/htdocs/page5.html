@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+
+        <!-- #region Стили -->
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/page5.css" />
+        <!-- #endregion -->
+
+        <!-- #region Шрифты -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- #endregion -->
+
+        <!-- Иконка -->
+        <link rel="shortcut icon" href="../images/logo.png" type="image/icon" />
+
+        <title>Вариант 3</title>
+    </head>
+    <body>
+        <!-- #region Заголовок -->
+        <header>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>Home Work</h2>
+
+                <!-- Название страницы -->
+                <h3>Форма 3</h3>
+            </a>
+        </header>
+        <!-- #endregion -->
+
+        <!-- #region Навигация-->
+        <nav>
+            <ul>
+                <!-- Главная -->
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/home_black.svg" alt="home" />
+                        Главная
+                    </a>
+                </li>
+
+                <!-- Вариант 7 -->
+                <li>
+                    <a href="page1.html">
+                        <img src="../images/one.svg" alt="one" />
+                        Вариант 7
+                    </a>
+                </li>
+
+                <!-- Вариант 9 -->
+                <li>
+                    <a href="page2.html">
+                        <img src="../images/two.svg" alt="two" />
+                        Вариант 9
+                    </a>
+                </li>
+
+                <!-- Вариант 15 -->
+                <li>
+                    <a href="page3.html">
+                        <img src="../images/three.svg" alt="three" />
+                        Вариант 15
+                    </a>
+                </li>
+
+                <!-- Форма 2 -->
+                <li>
+                    <a href="page4.html">
+                        <img src="../images/four.svg" alt="three" />
+                        Форма 2
+                    </a>
+                </li>
+
+                <!-- Форма 3 -->
+                <li>
+                    <a href="page5.html" class="select-tab">
+                        <img src="../images/five.svg" alt="five" />
+                        Форма 3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- #endregion -->
+
+        <!-- #region Контент -->
+        <main>
+            <section>
+                <form action="#" method="post">
+                    <!-- Поле "Введите ФИО" -->
+                    <div class="group-control">
+                        <label for="id_fullname">Введите ФИО:</label>
+                        <input type="text" name="fullname" id="id_fullname" required />
+                    </div>
+
+                    <!-- Поле "Введите пароль" -->
+                    <div class="group-control">
+                        <label for="id_pass">Введите пароль:</label>
+                        <input type="password" name="pass" id="id_pass" required />
+                    </div>
+
+                    <p>Какой диск вы хотите получить?</p>
+
+                    <!-- Радио-кнопки -->
+                    <div class="group-control">
+                        <!-- "CD" -->
+                        <label>
+                            <input type="radio" name="radio-disc" checked />
+                            CD
+                        </label>
+
+                        <!-- "DVD" -->
+                        <label>
+                            <input type="radio" name="radio-disc" />
+                            DVD
+                        </label>
+                    </div>
+
+                    <p>Какие обучающие курсы вы хотите видеть на диске?</p>
+
+                    <!-- Чек-боксы -->
+                    <div class="group-control">
+                        <!-- "Курсы по Фотошопу" -->
+                        <label>
+                            <input type="checkbox" name="photoshop" checked />
+                            Курсы по Фотошопу
+                        </label>
+
+                        <!-- "Курсы по Adobe Dreamweaver" -->
+                        <label>
+                            <input type="checkbox" name="dreamweaver" />
+                            Курсы по Adobe Dreamweaver
+                        </label>
+
+                        <!-- "Курсы по PHP" -->
+                        <label>
+                            <input type="checkbox" name="php" />
+                            Курсы по PHP
+                        </label>
+                    </div>
+
+                    <p>Выберите способ доставки:</p>
+
+                    <!-- Комбо-бокс -->
+                    <div class="group-control">
+                        <select name="select-elem">
+                            <option value="Штатная">Штатная</option>
+                            <option value="Срочная" selected>Срочная</option>
+                            <option value="Срочная">Самовывоз</option>
+                            <option value="Постматы">Постматы</option>
+                        </select>
+                    </div>
+
+                    <!-- Поле "Введите адрес для доставки" -->
+                    <div class="group-control">
+                        <label for="id_address">Введите адрес для доставки:</label>
+                        <textarea name="address" id="id_address" cols="50" rows="5" required></textarea>
+                    </div>
+
+                    <!-- Кнопки -->
+                    <div class="group-control">
+                        <!-- Кнопка "Сделать заказ" -->
+                        <button type="submit">Сделать заказ</button>
+
+                        <!-- Кнопка "Отмена" -->
+                        <button type="reset">Отмена</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Ссылка "Вверх" -->
+            <a href="#top" class="goto-top"><img src="../images/arrow_up_black.svg" alt="" /></a>
+        </main>
+        <!-- #endregion -->
+
+        <!-- #region Подвал страницы -->
+        <footer>
+            <!-- <span>Сведения о странице:</span> -->
+            <!-- <p> -->
+            <span>
+                Разработчик:
+                <a href="https://github.com/MikhailGoriachev" target="_bank"> Горячев Михаил </a>
+            </span>
+            <span>Группа: ПД011</span>
+            <span>Город: Донецк</span>
+            <span>Год создания: 2022</span>
+            <span>
+                Поддержка:
+                <a href="mailto:goriachevmichael@gmail.com">goriachevmichael@gmail.com</a>
+            </span>
+            <!-- </p> -->
+        </footer>
+        <!-- #endregion -->
+    </body>
+</html>

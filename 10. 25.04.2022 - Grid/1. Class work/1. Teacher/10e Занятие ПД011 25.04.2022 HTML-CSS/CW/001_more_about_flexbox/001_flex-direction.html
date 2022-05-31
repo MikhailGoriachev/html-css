@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox direction</title>
+	<style>
+		.container-1{
+
+			/* создаем Flex контейнер */
+            /*
+            display: flex       делает контейнер блочным элементом
+            display:inline-flex значение превращает его в инлайн-элемент
+            */
+			display: flex;
+
+			/*
+			flex-direction - Позволяет поворачивать главную ось
+                 row           : слева направо, значение по умолчанию
+                 row-reverse   : справа налево
+                 column        : сверху вниз
+                 column-reverse: снизу вверх
+            */
+			flex-direction:row;
+
+			width: 100%;
+			height: auto;
+			background-color: lavender;
+		}
+
+		/* стиль элемента в контейнере */
+		.item {
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			margin: 5px;
+			box-sizing: border-box;
+
+			text-align: center;
+			color: white;
+		}
+
+		/* стили демонстрационных блоков */
+		.darkslateblue{
+			background-color: red;
+		}
+		.darkblue{
+			background-color: darkblue;
+		}
+		.darkgreen{
+			background-color: green;
+		}
+		.darkcyan{
+			background-color: darkcyan;
+			color: lightcyan;
+		}
+		.darkorchid{
+			background-color: darkorchid;
+		}
+		.indigo{
+			background-color: indigo;
+		}
+	</style>
+</head>
+<body>
+	<h2>flex-direction</h2>
+	<div class="container">
+		<div class="item darkslateblue">1</div>
+		<div class="item darkblue">2</div>
+		<div class="item darkgreen">3</div>
+		<div class="item darkcyan">4</div>
+		<div class="item darkorchid">5</div>
+		<div class="item indigo">6</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+/* Основные стили */
+
+/* 
+    Палитра:
+    #2E4053     color 1     
+    #5D6D7E     color 2
+    #F7F9F9     color 3
+    #3498DB     color 4
+    #D6EAF8     color 5
+*/
+
+/* стили по умолчанию */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* общие стили страницы */
+html,
+body {
+    background-color: #d6eaf8;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+    height: 100%;
+}
+
+/* #region Заголовок страницы */
+
+/* иконка */
+img.navbar-logo {
+    width: 2.5rem;
+    margin: -0.6rem 1rem;
+}
+
+/* текст заголовок страницы */
+a.navbar-text {
+    font-size: 1.6rem;
+    margin-right: 10%;
+}
+
+/* #endregion */
+
+/* контейнер */
+.content {
+    width: 100%;
+    overflow: auto;
+}
+
+/* #region Левый блок */
+.left-bar {
+    width: 20%;
+    float: left;
+}
+
+/* форомление фнутреннего контейнера */
+div.left-bar {
+    background-color: #4c5b6b;
+    box-shadow: 0 0 1.5rem #0000009c;
+    border-bottom-right-radius: 0.5rem;
+    font-weight: normal;
+    outline: rgba(255, 255, 255, 0.555) solid 1px;
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+
+/* форомление фнутреннего контейнера при наведении */
+div.left-bar:hover {
+    box-shadow: 0 0 1.5rem #000000;
+}
+
+/* панель навигации */
+div.navbar {
+    background-color: #2e4053;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+/* навигационный спсиок */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ссылки навигационной панели */
+.nav-list a {
+    margin: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    border: 0.1rem solid rgba(255, 255, 255, 0);
+    border-radius: 1rem;
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+    text-align: left;
+}
+
+/* вкладка наведение */
+.nav-list a:hover {
+    border: 0.1rem solid rgba(255, 255, 255, 0.466);
+    border-radius: 1rem;
+
+    background-color: #3c5a7c;
+}
+
+/* текущая вкладка */
+a.nav-list-select-tab {
+    border: 0.1rem solid rgba(255, 255, 255, 0.466);
+    border-radius: 1rem;
+
+    background-color: #2e4053;
+}
+
+/* текущая вкладка наведение */
+a.nav-list-select-tab:hover {
+    border: 0.1rem solid rgba(255, 255, 255, 0.466);
+    border-radius: 1rem;
+
+    background-color: #4e6074;
+}
+
+/* иконка пункта навигационной панели */
+img.nav-list-img {
+    width: 1.6rem;
+    margin: auto 0.5rem -0.3rem;
+}
+
+/* заголовок старницы */
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* #endregion */
+
+/* #region Центральный блок */
+.main {
+    width: 80%;
+    float: left;
+}
+
+/* обший стиль блока */
+
+/* форомление фнутреннего контейнера */
+.main-container {
+    background-color: #fff;
+    box-shadow: 0 0px 2rem #00000052;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #989fa5;
+    padding: 1.5rem 3rem;
+    font-weight: normal;
+    text-align: justify;
+    margin: 1rem 1rem 3rem;
+}
+
+/* форомление фнутреннего контейнера при наведении */
+.main-container:hover {
+    box-shadow: 0 0px 2rem #0000008a;
+}
+
+/* стиль ссылки "подняться вверх" */
+.goto-top a {
+    display: block;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+
+    width: 6rem;
+    padding: 0.5rem;
+    color: #1a7de0;
+    background-color: #b3b7bbb9;
+    border: 0.1rem solid rgba(71, 68, 68, 0.466);
+    border-radius: 1rem;
+    margin: 3rem 0 1rem;
+}
+
+/* стиль ссылки "подняться вверх" при наведении */
+.goto-top a:hover {
+    color: #ffffff;
+    background-color: #62686eb9;
+}
+
+/* #endregion */
+
+/* панель навигации */
+div.navbar {
+    background-color: #2e4053;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+/* #endregion */
+
+/* #region Нижняя панель */
+.footer {
+    padding: 2.5rem;
+    background-color: #2e4053;
+    font-size: 1rem;
+    color: #c0c9cf;
+}
+
+/* выделение фрагментов */
+.footer span {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* ссылки */
+.footer a {
+    text-decoration: none;
+    color: rgb(114, 183, 223);
+    font-size: 1.2rem;
+}
+
+/* #endregion */

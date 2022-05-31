@@ -1,0 +1,129 @@
+/* Стили страницы "Вариант 6" (page1.html) */
+
+main {
+    position: relative;
+    height: 60vh;
+}
+
+/* #region образец */
+.sample {
+    top: 3rem;
+    left: 5%;
+
+    background-color: #0026ff49;
+}
+
+/* картинка образца */
+.sample img {
+    width: 100%;
+    height: 16vw;
+}
+
+/* #endregion */
+
+/* #region результат */
+.result {
+    top: 3rem;
+    right: 5%;
+
+    background-color: #2bff0077;
+}
+
+/* блоки */
+.blocks {
+    position: relative;
+
+    height: 16vw;
+    width: 100%;
+}
+
+/* серый блок */
+.gray {
+    position: absolute;
+
+    background-color: #bcb0d4;
+
+    height: 15%;
+    width: 50%;
+}
+
+/* оранжевый верхний блок */
+.orange {
+    position: absolute;
+
+    left: 50%;
+
+    background-color: #f57f01;
+
+    height: 15%;
+    width: 50%;
+}
+
+/* синий блок */
+.blue {
+    position: absolute;
+
+    top: 15%;
+
+    background-color: #0188e1;
+
+    height: 71%;
+    width: 26%;
+}
+
+/* жёлтый блок */
+.yellow {
+    position: absolute;
+
+    top: 15%;
+    left: 26%;
+
+    background-color: #fefa01;
+
+    height: 71%;
+    width: 74%;
+}
+
+/* зелёный блок */
+.green {
+    position: absolute;
+
+    top: 86%;
+
+    background-color: #009049;
+
+    height: 14%;
+    width: 100%;
+}
+
+/* оранжевый внутренний блок */
+.orange-inner {
+    position: absolute;
+
+    top: 22%;
+    left: 64%;
+
+    background-color: #f57f01;
+
+    height: 11%;
+    width: 21%;
+
+    z-index: 1;
+}
+
+/* фиолетовый блок */
+.margin {
+    position: absolute;
+
+    top: 30%;
+    left: 76%;
+
+    background-color: #f02f72;
+
+    height: 11%;
+    width: 21%;
+
+    z-index: 1;
+}
+
+/* #endregion */

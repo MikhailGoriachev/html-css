@@ -1,0 +1,24 @@
+/* Стиль блока для страниц page1 и page2 */
+
+/* стиль блока */
+.block-template {
+    position: absolute;
+
+    width: 25vw;
+    text-align: center;
+    padding: 0 0 3rem;
+
+    box-shadow: 0 0 3rem #00000038;
+
+    border-radius: 1rem;
+}
+
+/* наведение на блоки */
+.block-template:hover {
+    box-shadow: 0 0 1rem 1rem #006eff42;
+}
+
+/* нажатие на блок */
+.block-template:active {
+    box-shadow: inset 0 0 1rem 1rem #006eff42;
+}

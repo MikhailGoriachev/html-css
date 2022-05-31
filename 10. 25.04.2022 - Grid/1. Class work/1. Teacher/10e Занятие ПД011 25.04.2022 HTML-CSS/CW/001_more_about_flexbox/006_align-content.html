@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Align-Content</title>
+    <style>
+        .container-1 {
+            /* создаем Flex контейнер */
+            display: flex;
+            background-color: lavender;
+            height:800px;
+
+            /*flex-direction: row;
+             flex-wrap: wrap; - сокращенно*/
+            flex-flow: row wrap;
+
+            /* выравниваем элементы по главной оси.*/
+            justify-content: center;
+
+            /* добавить высоту контейнеру и блоки для демо */
+            /* align-content -  определяет каким образом образовавшиеся ряды блоков будут
+                 выровнены по вертикали и как они поделят между собой все пространство flex-контейнера:
+                 !! работает только вместе c flex-wrap !!
+                - stretch      : ряды блоков растянуты, чтобы занять все имеющееся пространство
+                                 (значение по умолчанию) - закомментировать height в .item
+                - flex-start   : ряды блоков прижаты к началу flex-контейнера.
+                - flex-end     : ряды блоков прижаты к концу flex-контейнера
+                - center       : ряды блоков находятся в центре flex-контейнера
+                - space-between: первый ряд блоков располагается в начале flex-контейнера, последний ряд блоков
+                                 блок – в конце, все остальные ряды равномерно распределены в оставшемся пространстве
+                - space-around : ряды блоков равномерно распределены в от начала до конца flex-контейнера,
+                                 разделяя все свободное пространство поровну.
+            */
+            align-content: center;
+        }
+
+        .item {
+            height: 240px;
+            margin: 5px;
+            padding: 10px;
+
+            color: white;
+            border: solid 1px darkblue;
+        }
+
+        .darkslateblue {
+            width: 200px;
+            background-color: darkslateblue;
+        }
+
+        .darkblue {
+            width: 400px;
+            background-color: darkblue;
+        }
+
+        .darkgreen {
+            width: 600px;
+            background-color: darkgreen;
+        }
+
+        .linen {
+            width: 800px;
+            background-color: linen;
+            color: darkgreen;
+        }
+
+        .gainsboro {
+            width: 500px;
+            background-color: gainsboro;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="item darkslateblue">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+        <div class="item darkblue">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum adipisci eos, sequi quibusdam, ducimus velit aperiam. Officia voluptates architecto doloribus nisi laudantium, aperiam minus amet mollitia labore, quia autem quis.
+        </div>
+        <div class="item darkgreen">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus soluta, exercitationem distinctio id repellendus quasi, necessitatibus officia aliquam laudantium sit autem placeat assumenda quaerat! Doloremque unde dolorum soluta error quae!
+        </div>
+        <div class="item linen">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus soluta, exercitationem distinctio id repellendus quasi, necessitatibus officia aliquam laudantium sit autem placeat assumenda quaerat! Doloremque unde dolorum soluta error quae!
+        </div>
+        <div class="item gainsboro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus soluta,
+            exercitationem distinctio id repellendus quasi, necessitatibus officia aliquam
+            laudantium sit autem placeat assumenda quaerat! Doloremque unde dolorum soluta error quae!
+        </div>
+    </div>
+</body>
+</html>

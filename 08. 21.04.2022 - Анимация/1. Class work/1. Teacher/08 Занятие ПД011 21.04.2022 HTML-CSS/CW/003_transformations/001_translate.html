@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Translate</title>
+
+    <style>
+        .img {
+            /* перемещение элемента на 300px по X и на 50px по Y*/
+
+            /*-moz-transform: translate(300px, 50px);*/
+            /*-ms-transform: translate(300px, 50px);*/
+            /*-o-transform: translate(300px, 50px);*/
+            /*-webkit-transform: translate(300px, 50px);*/
+
+            transform: translate(150px, 50px);
+        }
+    </style>
+</head>
+<body>
+    <!-- объект без трансформации -->
+    <img src="front.jpg" alt="King Of Hearts" />
+
+    <!-- объект с трансформацией -->
+    <img class="img" src="front.jpg" alt="King Of Hearts" />
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Стили страницы "Вариант 7" (page1.html) */
+
+section {
+    height: 90vh;
+    padding-bottom: 3rem;
+}
+
+/* #region блоки */
+
+/* оранжевый блок */
+.orange {
+    height: 15%;
+    width: 100%;
+
+    background-color: #f57f01;
+}
+
+/* синий блок */
+.blue {
+    height: 70%;
+    width: 18%;
+
+    float: left;
+
+    background-color: #0188e1;
+}
+
+/* розовый блок */
+.pink {
+    height: 70%;
+    width: 18%;
+
+    float: left;
+
+    background-color: #fb9d9b;
+}
+
+/* желтый блок */
+.yellow {
+    height: 70%;
+    width: 64%;
+
+    float: left;
+    position: relative;
+
+    background-color: #fefa01;
+}
+
+/* сиреневый блок */
+.margenta {
+    height: 19%;
+    width: 47%;
+
+    position: absolute;
+
+    top: 9%;
+    left: 5%;
+
+    transition: all ease-out 3s;
+
+    background-color: #f02f72;
+
+    cursor: pointer;
+}
+
+/* наведение на сиреневый блок */
+.margenta:hover {
+    transform: scale(2);
+}
+
+/* серый блок */
+.gray {
+    height: 19%;
+    width: 47%;
+
+    position: absolute;
+
+    top: 20%;
+    left: 25%;
+
+    background-color: #bcb0d4;
+
+    transition: opacity ease-out 4s;
+
+    cursor: pointer;
+}
+
+/* наведение на серый блок */
+.gray:hover {
+    opacity: 0;
+}
+
+/* зеленый блок */
+.green {
+    height: 14%;
+    width: 100%;
+
+    /* float: none; */
+    clear: both;
+
+    background-color: #009049;
+}
+
+/* #endregion */

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Position Row</title>
+    <meta charset="utf-8" />
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 50px);
+            grid-gap: 10px;
+            background-color: lightgray;
+        }
+
+        /* задание ряда для отображения элемента */
+        .grid div:nth-child(1) {
+            grid-column: 1/5;
+            /* В каком ряду отображать */
+            grid-row:2;
+        }
+
+        .grid div:nth-child(2) {
+            /* в каком столбце отображать */
+            grid-column: 1;
+            /* В каком ряду отображать */
+            grid-row:1;
+        }
+
+        .grid div:nth-child(3) {
+            grid-column:2/4;
+            /* В каком ряду отображать */
+            grid-row:3;
+        }
+
+        /*--region стили для блоков--*/
+            .grid div {
+            background-color: darkcyan;
+            border: 1px solid black;
+
+            border-radius: 5px;
+            padding: 8px 15px;
+
+            color: white;
+            font-size: 18px;
+        }
+
+        .grid div:nth-child(odd) {
+            background-color: lightseagreen;
+        }
+        /*--endregion--*/
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>Item-1</div>
+        <div>item-2</div>
+        <div>item-3</div>
+        <div>item-4</div>
+        <div>item-5</div>
+        <div>item-6</div>
+        <div>item-7</div>
+        <div>item-8</div>
+    </div>
+</body>
+</html>

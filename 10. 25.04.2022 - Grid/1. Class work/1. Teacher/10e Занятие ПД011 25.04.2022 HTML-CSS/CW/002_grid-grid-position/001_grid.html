@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Grid columns/rows</title>
+    <meta charset="utf-8" />
+    <style>
+        .grid {
+            /* Grid разметка контейнера */
+            display: grid;
+
+            /* нумерация строк и столбцов начинается с 1 */
+
+            /* указываем 3 строки 200px, 100px, 150px */
+            /* grid-template-rows: высота 1 ряда, высота 2 ряда....*/
+            grid-template-rows: 200px 100px 150px;
+
+            /* указываем количество колонок (в данном случае 3) по 200px */
+            /* grid-template-columns: ширина 1 столбца, ширина 2 столбца... */
+            grid-template-columns: 200px 300px 250px;
+
+            /* Сокращенная запись для отображения колонок и столбцов*/
+            /*grid-template:200px 100px 150px / 200px 300px 250px;*/
+
+            /* для оставшихся элементов, не включенных в столбцы и строки:*/
+            grid-auto-rows:50px;     
+            background-color: lightgray;
+        }
+
+        .grid div {
+            background-color: darkcyan;
+            border: 1px solid black;
+
+            border-radius: 5px;
+            padding: 8px 15px;
+
+            color: white;
+            font-size: 18px;
+        }
+
+        .grid div:nth-child(odd) {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- контейнер для grid  -->
+    <div class="grid">
+        <div>item-1</div>
+        <div>item-2</div>
+        <div>item-3</div>
+
+        <div>item-4</div>
+        <div>item-5</div>
+        <div>item-6</div>
+
+        <div>item-7</div>
+        <div>item-8</div>
+        <div>item-9</div>
+
+        <div>item-10</div>
+        <div>item-11</div>
+    </div>
+
+</body>
+</html>

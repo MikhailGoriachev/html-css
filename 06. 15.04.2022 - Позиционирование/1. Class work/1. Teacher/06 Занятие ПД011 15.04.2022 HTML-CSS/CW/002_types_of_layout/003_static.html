@@ -1,0 +1,93 @@
+﻿<!-- Статическая блочная верстка, верстка при помощи div (слоев) -->
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Верстка div'ами или слоями -->
+<head>
+    <meta charset="utf-8" />
+    <title>Статическая верстка</title>
+
+    <!-- Ширина при статической верстке определяется из расчета того,
+    что по статистическим данным большинство пользователей используют мониторы
+    с разрешением 1024х768 пикселей.
+    Следовательно, для того, чтобы избежать появления горизонтальной полосы
+    прокрутки и искажения дизайна, нужно в среднем брать ширину макета примерно
+    800-990 пикселей. Недостаток при таком методе верстки – это неэффективное
+    использование свободной площади.
+-->
+
+    <style>
+        .container {
+            width:1000px;
+            height:950px;
+            border:1px solid black;
+            margin:0 auto;
+        }
+
+        .header{
+            /* 980 + 10 + 10 = 1000*/
+            width:980px;
+            padding:10px;
+
+            height:130px;
+            background-color: lightseagreen;
+
+        }
+
+        /* контейнер для left-bar и content */
+        .main {
+            width:1000px;
+            height:750px;
+         }
+
+        .left-bar {
+            width:230px;
+            height:730px;
+            background-color: lightskyblue;
+            padding:10px;
+            float:left;
+        }
+
+        .content {
+            width:530px;
+            height:730px;
+            padding:10px;
+            float:left;
+        }
+
+        .footer {
+            width:980px;
+            height:30px;
+            background-color: lightseagreen;
+            padding:10px
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            Шапка
+        </div>
+
+        <div class="main">
+            <div class="left-bar">
+                левый блок
+            </div>
+            <div class="content">
+                <h1>основной контент</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae eos expedita molestiae nemo nobis
+                    omnis praesentium quasi quibusdam? Aliquam asperiores deserunt dolorum natus necessitatibus nemo
+                    nobis nostrum repellendus suscipit!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae eos expedita molestiae nemo nobis
+                    omnis praesentium quasi quibusdam? Aliquam asperiores deserunt dolorum natus necessitatibus nemo
+                    nobis nostrum repellendus suscipit!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            футер
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Главная</title>
+
+        <!-- #region Стили -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <!-- #endregion -->
+
+        <!-- #region Шрифты -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- #endregion -->
+
+        <!-- иконка -->
+        <link rel="shorcut icon" href="images/logo.png" type="image/x-icon" />
+    </head>
+    <body>
+        <!-- #region Заголовок-->
+        <header>
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="logo" />
+                <h2>Home Work</h2>
+            </a>
+        </header>
+        <!-- #endregion -->
+
+        <!-- #region Контент страницы -->
+        <main>
+            <!-- #region Навигация -->
+            <nav>
+                <!-- Главная -->
+                <a class="select-tab" href="index.html">
+                    <img src="images/home.svg" />
+                    Главная
+                </a>
+
+                <!-- Форма: доктор -->
+                <a href="htdocs/page1.html">
+                    <img src="images/one.svg" />
+                    Форма: доктор
+                </a>
+
+                <!-- Форма: приём -->
+                <a href="htdocs/page2.html">
+                    <img src="images/two.svg" />
+                    Форма: приём
+                </a>
+
+                <!-- Таблицы -->
+                <a href="htdocs/page3.html">
+                    <img src="images/three.svg" />
+                    Таблицы
+                </a>
+
+                <!-- Вариант 15 -->
+                <a href="htdocs/page4.html">
+                    <img src="images/four.svg" />
+                    Вариант 15
+                </a>
+            </nav>
+            <!-- #endregion -->
+
+            <!-- #region Контент -->
+            <section class="content">
+                <article>
+                    <!-- #region Теоретическая часть -->
+                    <details open>
+                        <summary>
+                            <h2>Теоретическая часть</h2>
+                        </summary>
+
+                        <ul>
+                            <li>Анимация для трансформций</li>
+                            <li>Пример анимации для 3D трансформции</li>
+                            <li>Фильтры изображений</li>
+                            <li>Понятие о CSS3 <b>Flexible Box</b></li>
+                            <li>Понятие осей в <b>FlexBox</b>.</li>
+                            <li>Преимущества <b>FlexBox</b>.</li>
+                            <li>Основные свойства и методы <b>FlexBox</b></li>
+                            <li>Способы задания размера: <b>content-box</b>, <b>border-box</b></li>
+                            <li>Шаблон страницы с использованием <b>FlexBox</b></li>
+                        </ul>
+                    </details>
+                    <!-- #endregion -->
+
+                    <!-- #region Практическая часть -->
+                    <details open>
+                        <summary>
+                            <h2>Практическая часть</h2>
+                        </summary>
+
+                        <p>Разработайте набор веб-страниц с использованием flexbox для макета веб-страниц.</p>
+
+                        <p>
+                            <b>Важно</b>: при помощи внешних стилей, семантических тегов <b>HTML5</b>, <b>flexbox</b>,
+                            реализуйте дизайн:
+                        </p>
+
+                        <ul>
+                            <li>в верхнем блоке размещайте заголовок, относящийся к странице</li>
+                            <li>в боковом блоке – навигацию по страницам</li>
+                            <li>в центральном блоке – контент по заданию</li>
+                            <li>
+                                в нижнем блоке – данные о разработчике: фамилия и имя, группа, город, год разработки,
+                                адрес e-mail в формате ссылки
+                            </li>
+                            <li>
+                                для всех форм используйте метод передачи post, в качестве обрабатывающей страницы
+                                укажите текущую (<b>#</b>)
+                            </li>
+                        </ul>
+
+                        <p>Набор страниц для разработки (размещать в блоке контента):</p>
+
+                        <ul>
+                            <li><b>Главная страница</b> с этим заданием</li>
+                            <li>
+                                <b>Страница 1.</b> Форма ввода данных о докторе. Все поля обязательны для заполнения.
+                                Поля формы:
+                                <ul>
+                                    <li>Фамилия доктора</li>
+                                    <li>Имя доктора</li>
+                                    <li>Отчество доктора</li>
+                                    <li>Врачебная специальность (из выпадающего списка)</li>
+                                    <li>
+                                        Переключатель наличия у доктора научного звания: без звания, кандидат
+                                        медицинских наук, доктор медицинских наук
+                                    </li>
+                                    <li>Дата рождения доктора</li>
+                                    <li>Выбор файла фото доктора</li>
+                                    <li>Процент для оплаты приема.</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <b>Страница 2.</b> Форма ввода данных врачебного приема. Все поля обязательны для
+                                заполнения. Поля формы:
+
+                                <ul>
+                                    <li>Фамилия пациента</li>
+                                    <li>Имя пациента</li>
+                                    <li>Отчество пациента</li>
+                                    <li>Номер телефона пациента</li>
+                                    <li>Поле ввода адреса проживания пациента</li>
+                                    <li>
+                                        Доктор, выполняющий прием – выбираем из выпадающего списка фамилию и инициалы
+                                    </li>
+                                    <li>Номер кабинета – из выпадающего списка</li>
+                                    <li>Поле ввода симптомов – textarea</li>
+                                    <li>Признак срочного приема</li>
+                                    <li>Признак платного приема</li>
+                                    <li>Дата и время приема.</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <b>Страница 3.</b> Две таблицы с заданием на разработку базы данных, форм, запросов,
+                                отчетов по
+                                <a
+                                    target="_blank"
+                                    href="http://edu.tltsu.ru/er/book_view.php?book_id=1544&page_id=12589"
+                                    >этой ссылке</a
+                                >.
+                            </li>
+
+                            <li>
+                                <b>Страница 4.</b> Вариант 15 на позиционирование из
+                                <a
+                                    target="_blank"
+                                    href="http://web-verstka.ru/uchebnyie-kursyi/uroki-html-i-css/kontrolnoe-zadanie-po-blochnoj-verstke.html"
+                                    >этого задания</a
+                                >. Реализуйте анимацию при наведении указателя мыши на каждый из вложенных блоков
+                                соответственно: оранжевый вращается на 270о за 4 с, малиновый скручивается по X на 45о,
+                                по Y на 60о за 6 секунды
+                            </li>
+                        </ul>
+
+                        <p>При разработке оформления контента используйте изученные возможности HTML5, CSS3.</p>
+                    </details>
+                    <!-- #endregion -->
+
+                    <!-- #region Дополнение -->
+                    <details open>
+                        <summary>
+                            <h2>Дополнение</h2>
+                        </summary>
+
+                        <p>
+                            Запись занятия можно скачать по
+                            <a target="_blank" href="https://cloud.mail.ru/public/m3Ac/n7acC5Qo3">этой ссылке</a>.
+                            Материалы занятия – в этом же архиве.
+                        </p>
+                    </details>
+                    <!-- #endregion -->
+                </article>
+            </section>
+            <!-- #endregion -->
+        </main>
+        <!-- #endregion -->
+
+        <!-- #region Подвал страницы -->
+        <footer>
+            <!-- <span>Сведения о странице:</span> -->
+            <div>
+                Разработчик:
+                <a href="https://github.com/MikhailGoriachev" target="_bank"> Горячев Михаил </a>
+            </div>
+            <div>Группа: ПД011</div>
+            <div>Город: Донецк</div>
+            <div>Год создания: 2022</div>
+            <div>
+                Поддержка:
+                <a href="mailto:goriachevmichael@gmail.com">goriachevmichael@gmail.com</a>
+            </div>
+        </footer>
+        <!-- #endregion -->
+    </body>
+</html>

@@ -1,0 +1,64 @@
+/* Страница "Таблицы" (page3.html) */
+
+/* заголовки 2-го уровня */
+h2 {
+    text-align: center;
+}
+
+/* жирный курсив */
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* текст по центру */
+.text-center {
+    text-align: center;
+}
+
+/* первая таблица */
+.first-table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+/* строки таблицы */
+.first-table tr {
+    border-bottom: 1px solid #000;
+}
+
+/* ячейки таблицы */
+.first-table td {
+    padding: 2px 0;
+    margin: 0;
+}
+
+/* абзацы */
+p {
+    padding: 0;
+    margin: 2px 0;
+}
+
+/* первый и последний элементы в ячейке */
+.first-table *:first-child,
+.first-table *:last-child {
+    margin: 0;
+}
+
+/* вторая таблица */
+.second-table {
+    border-collapse: collapse;
+    border: 2px inset gray;
+}
+
+/* ячейки таблицы и заголовки таблицы */
+.second-table td,
+.second-table th {
+    border: 2px inset gray;
+    padding: 0;
+}
+
+/* ячейки таблицы */
+.second-table td {
+    vertical-align: text-top;
+}

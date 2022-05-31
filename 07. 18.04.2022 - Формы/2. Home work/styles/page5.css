@@ -1,0 +1,33 @@
+/* Стили страницы "Форма 2" (page5.html) */
+
+form {
+    font-size: 1.1rem;
+}
+
+/* блок контролов для ввода */
+.group-control {
+    margin: 1rem 0;
+}
+
+/* поля ввода текста */
+.group-control input[type='text'],
+.group-control input[type='password'] {
+    border: 2px inset #efefef;
+}
+
+/* подсказки label */
+.group-control label {
+    display: block;
+}
+
+/* поле ввода адреса доставки */
+.group-control textarea {
+    display: block;
+    border: 1px solid #000;
+    margin: 0;
+}
+
+/* кнопки */
+.group-control button {
+    margin: 0.5rem 0.3rem 0 0;
+}

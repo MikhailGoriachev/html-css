@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox justify-content</title>
+	<style>
+		.container-1{
+			/*создаем Flex контейнер */
+			display: flex;	
+			flex-direction:row;
+
+			/*  justify-content - отвечает за выравнивание элементов по главной оси:
+                flex-start   : блоки прижаты к началу главной оси (значение по умолчанию)
+                flex-end     : блоки прижаты к концу главной оси
+                center       : блоки располагаются в центре главной оси
+                space-between: первый блок располагается в начале главной оси, 
+                               последний блок – в конце, все остальные блоки равномерно распределены
+                               в оставшемся пространстве.
+                space-around : все блоки равномерно распределены вдоль главной оси, разделяя все
+                               свободное пространство поровну.
+			*/
+			justify-content: center;
+
+			width: 100%;
+			height: auto;
+			background-color: lavender;
+		}
+
+		/* TODO: для упражнения реализуйте контейнеры с оставшимися значениями свойства justify-content */
+		.container-2 {
+			/*создаем Flex контейнер */
+			display: flex;
+			flex-direction:row;
+
+			justify-content: space-between;
+
+			width: 100%;
+			height: auto;
+			background-color: lavender;
+		}
+
+		/* стили элемента */
+		.item{
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			margin: 5px;
+			box-sizing: border-box;
+
+			text-align: center;
+			color: white;
+		}
+
+		/* стили демонстрационных блоков */
+		.darkslateblue{
+			background-color: darkslateblue;
+		}
+		.darkblue{
+			background-color: darkblue;
+		}
+		.darkgreen{
+			background-color: darkgreen;
+		}
+		.darkcyan{
+			background-color: darkcyan;
+			color: lightcyan;
+		}
+		.darkorchid{
+			background-color: darkorchid;
+		}
+		.indigo{
+			background-color: indigo;
+		}
+	</style>
+</head>
+<body>
+    <h2>justify-content: center</h2>
+	<div class="container-1">
+		<div class="item darkslateblue">1</div>
+		<div class="item darkblue">2</div>
+		<div class="item darkgreen">3</div>
+		<div class="item darkcyan">4</div>
+		<div class="item darkorchid">5</div>
+		<div class="item indigo">6</div>
+	</div>
+
+	<h2>justify-content: space-between</h2>
+
+	<div class="container-2">
+		<div class="item darkslateblue">1</div>
+		<div class="item darkblue">2</div>
+		<div class="item darkgreen">3</div>
+		<div class="item darkcyan">4</div>
+		<div class="item darkorchid">5</div>
+		<div class="item indigo">6</div>
+	</div>
+</body>
+</html>

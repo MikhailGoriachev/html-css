@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div.container {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            /*
+                Первый способ отменить схлопывание родительского контейнера,
+                содержащего только элементы со свойством float
+            */
+            /*overflow: auto;*/
+        }
+
+         /*для всех div в контейнере*/
+        div.container > div {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            float: left;
+        }
+
+        /*
+            Второй способ.
+        */
+
+       /*.container:last-child::after{*/
+       /*    content: "";*/
+       /*    visibility: hidden;*/
+       /*    display: block;*/
+       /*    height: 0;*/
+       /*    clear: both;*/
+       /*}*/
+
+
+        #elem1 {
+            background-color: lightseagreen;
+        }
+
+        #elem2 {
+            background-color: green;
+        }
+
+        #elem3 {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="elem1"></div>
+        <div id="elem2"></div>
+        <div id="elem3"></div>
+    </div>
+    <!-- Третий способ -->
+<!--    <div style="clear:both;"></div>-->
+    <h3>текст заголовка</h3>
+</body>
+</html>

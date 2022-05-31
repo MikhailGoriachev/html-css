@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox flex-wrap</title>
+    <style>
+        .container-1 {
+            /*создаем Flex контейнер */
+            display: flex;
+            background-color: lightskyblue;
+
+            /* блоки размещаем вдоль главной оси, выравниваниваем элементы
+               по главной оси - по центру */
+            flex-direction: row;
+            justify-content: center;
+
+            /*
+                flex-wrap - Переносы блоков в строке внутри flex-контейнера, многострочный контейнер:
+                nowrap      : (значение по умолчанию) блоки расположены в одну линию слева направо
+                wrap        : блоки расположены в несколько горизонтальных рядов (если не помещаются
+                              в один ряд). Они следуют друг за другом слева направо
+                wrap-reverse: то-же что и wrap, но блоки располагаются в обратном порядке
+            */
+            flex-wrap: wrap-reverse;
+
+            /*flex-flow – удобное сокращение для flex-direction и flex-wrap*/
+            /*flex-flow: row wrap;*/
+        }
+
+        .item {
+            height: 240px;
+
+            margin: 5px;
+            padding: 10px;
+
+            color: white;
+        }
+
+        .darkslateblue {
+            width: 200px;
+            background-color: darkslateblue;
+        }
+
+        .darkblue {
+            width: 400px;
+            background-color: darkblue;
+        }
+
+        .darkgreen {
+            width: 600px;
+            background-color: darkgreen;
+        }
+
+        .linen {
+              width: 800px;
+              background-color: linen;
+              color: darkgreen;
+        }
+
+        .gainsboro {
+            width: 500px;
+            background-color: gainsboro;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h3>Много блоков - для демонстрации flex-wrap</h3>
+    <div class="container-1">
+        <!-- много блоков - для демонстрации flex-wrap -->
+        <div class="item darkslateblue">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+
+        <div class="item darkblue">
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae dolorum eos illum neque numquam perspiciatis quia. Blanditiis corporis, doloribus laudantium officia omnis quae quibusdam quidem saepe soluta voluptates voluptatibus.</span><span>Aperiam assumenda blanditiis eligendi, iusto laudantium molestiae provident quasi temporibus. Alias aspernatur atque autem consequatur cupiditate dolorem eaque labore maxime nesciunt officiis quas, quis ratione ullam vitae voluptas voluptatem, voluptatum.</span><span>Fuga iusto nulla omnis. Odio quas ratione vel. Adipisci aliquam corporis dolores ipsa necessitatibus! Atque consectetur dignissimos, ea iste laborum odio quidem ullam. Autem cumque et impedit maiores nihil vero?</span>
+            </p>
+        </div>
+
+        <div class="item darkgreen">
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae dolorum eos illum neque numquam perspiciatis quia. Blanditiis corporis, doloribus laudantium officia omnis quae quibusdam quidem saepe soluta voluptates voluptatibus.</span><span>Aperiam assumenda blanditiis eligendi, iusto laudantium molestiae provident quasi temporibus. Alias aspernatur atque autem consequatur cupiditate dolorem eaque labore maxime nesciunt officiis quas, quis ratione ullam vitae voluptas voluptatem, voluptatum.</span><span>Fuga iusto nulla omnis. Odio quas ratione vel. Adipisci aliquam corporis dolores ipsa necessitatibus! Atque consectetur dignissimos, ea iste laborum odio quidem ullam. Autem cumque et impedit maiores nihil vero?</span>
+            </p>
+        </div>
+
+        <div class="item linen">
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae dolorum eos illum neque numquam perspiciatis quia. Blanditiis corporis, doloribus laudantium officia omnis quae quibusdam quidem saepe soluta voluptates voluptatibus.</span><span>Aperiam assumenda blanditiis eligendi, iusto laudantium molestiae provident quasi temporibus. Alias aspernatur atque autem consequatur cupiditate dolorem eaque labore maxime nesciunt officiis quas, quis ratione ullam vitae voluptas voluptatem, voluptatum.</span><span>Fuga iusto nulla omnis. Odio quas ratione vel. Adipisci aliquam corporis dolores ipsa necessitatibus! Atque consectetur dignissimos, ea iste laborum odio quidem ullam. Autem cumque et impedit maiores nihil vero?</span>
+            </p>
+        </div>
+
+        <div class="item gainsboro">
+            gainsboro
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae dolorum eos illum neque numquam perspiciatis quia. Blanditiis corporis, doloribus laudantium officia omnis quae quibusdam quidem saepe soluta voluptates voluptatibus.</span><span>Aperiam assumenda blanditiis eligendi, iusto laudantium molestiae provident quasi temporibus. Alias aspernatur atque autem consequatur cupiditate dolorem eaque labore maxime nesciunt officiis quas, quis ratione ullam vitae voluptas voluptatem, voluptatum.</span><span>Fuga iusto nulla omnis. Odio quas ratione vel. Adipisci aliquam corporis dolores ipsa necessitatibus! Atque consectetur dignissimos, ea iste laborum odio quidem ullam. Autem cumque et impedit maiores nihil vero?</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

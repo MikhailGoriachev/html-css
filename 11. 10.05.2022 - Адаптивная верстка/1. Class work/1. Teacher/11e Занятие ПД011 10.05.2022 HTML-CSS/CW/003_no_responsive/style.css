@@ -1,0 +1,72 @@
+/* стили без адаптивности по ширине экрана  */
+
+
+body {
+    font-family: Verdana, sans-serif;
+
+    background-color: #ac0;
+}
+
+header {
+    background-color: #d7e689;
+    padding: 10px;
+    border-radius: 5px;
+    width: 960px; /* бОльшая часть устройств это поддерживают  */
+    margin: auto; /* для центровки по горизонтали */
+}
+
+/* заголовок h1 в  header */
+header h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* большой баннер */
+.big-banner {
+    height: 160px;
+    background-color: #ffd800;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+/* заголовки большог и малого баннеров */
+h2, .small-banner h3, footer h4 {
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+/* основной контент страницы */
+main {
+    width: 960px; /* бОльшая часть устройств это поддерживают  */
+    margin: auto; /* для центровки по горизонтали */
+    display: flex;
+}
+
+/* блок в главном контенте */
+.block {
+    background-color: blue;
+    border-radius: 5px;
+    border: solid 1px white;
+
+    min-height: 300px;
+    width: 29%;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+/* малый баннер */
+.small-banner {
+    height: 90px;
+    width: 220px;
+    margin: auto 5px;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+}

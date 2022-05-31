@@ -1,0 +1,101 @@
+/* Стили страницы "Вариант 9" (page2.html) */
+
+section {
+    height: 90vh;
+    padding-bottom: 3rem;
+}
+
+/* #region блоки */
+
+/*
+                    260px   x   401px (2.6 x 4.01)
+    blue =          260px   x   107px   100% x 27%
+    orange =        41px    x   294px   16%  x 73%
+    yellow =        185px   x   294px   71%  x 73%
+    inner-orange =  32px    x   86px    17%  x 29%  17px x 16px  9%  x 5%
+    margenta =      32px    x   86px    17%  x 29%  40px x 67px  21% x 22%
+    gray =          32px    x   86px    17%  x 29%  60px x 128px 32% x 43%
+    green =         37px    x   294px   13%  x 73%
+
+*/
+
+/* синий блок */
+.blue {
+    height: 100%;
+    width: 27%;
+
+    float: right;
+
+    background-color: #0188e1;
+}
+
+/* оранжевый блок */
+.orange {
+    height: 16%;
+    width: 73%;
+
+    float: left;
+    background-color: #f57f01;
+}
+
+/* желтый блок */
+.yellow {
+    height: 70%;
+    width: 73%;
+
+    float: left;
+    position: relative;
+
+    background-color: #fefa01;
+}
+
+/* розовый блок */
+.orange-inner {
+    height: 17%;
+    width: 29%;
+
+    position: absolute;
+
+    top: 9%;
+    left: 5%;
+
+    background-color: #f57f01;
+}
+
+/* сиреневый блок */
+.margenta {
+    height: 17%;
+    width: 29%;
+
+    position: absolute;
+
+    top: 21%;
+    left: 22%;
+
+    background-color: #f02f72;
+}
+
+/* серый блок */
+.gray {
+    height: 17%;
+    width: 29%;
+
+    position: absolute;
+
+    top: 32%;
+    left: 43%;
+
+    background-color: #bcb0d4;
+}
+
+/* зеленый блок */
+.green {
+    height: 14%;
+    width: 73%;
+
+    float: left;
+
+    background-color: #009049;
+}
+
+/* #endregion */

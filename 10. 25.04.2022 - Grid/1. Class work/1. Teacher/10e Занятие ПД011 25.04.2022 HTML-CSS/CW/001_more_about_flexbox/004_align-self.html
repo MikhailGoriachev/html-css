@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox align-self</title>
+	<style>
+		/* Выравнивание одного блока по поперечной оси - см. стили ниже */
+		.container-1{
+			/* создаем Flex контейнер */
+			display: flex;		
+			flex-direction:row;
+
+			justify-content:center; /* все блоки в центре */
+			align-items: center;      /* все блоки в центре       */
+
+			width: 100%;
+			height: 480px;
+			background-color: lavender;
+		}
+
+		.item{
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			box-sizing: border-box;
+
+			text-align: center;
+			color: white;
+		}
+
+		.darkslateblue{
+			/*
+			 align-self выравнивание отдельно взятого flex-блока по
+			 поперечной оси (flex-start, flex-end, center, stretch, baseline)
+			 */
+			align-self: flex-start;
+			
+			background-color: darkslateblue;
+		}
+
+		.darkred{
+            align-self: flex-start;
+			background-color: darkred;
+		}
+
+		.darkgreen{
+			align-self: center;
+			background-color: darkgreen;
+		}
+
+		.darkcyan{
+			align-self:center;
+			background-color: darkcyan;
+		}
+
+		.darkorchid{
+            align-self:  flex-end;
+			background-color: darkorchid;
+		}
+
+		.indigo{
+			align-self:  flex-end;
+			background-color: indigo;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-1">
+		<div class="item darkslateblue">1</div>
+		<div class="item darkred">2</div>
+		<div class="item darkgreen">3</div>
+		<div class="item darkcyan">4</div>
+		<div class="item indigo">5</div>
+		<div class="item darkorchid">6</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+/* Основные стили страниц */
+html,
+body {
+    font-size: 10pt;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+
+    background-color: #e6e8f9;
+    width: 100%;
+}
+
+/* Верхняя точка сайта (нужна, чтоб подняться в самое начало страницы)  */
+#top {
+    position: absolute;
+    top: 0;
+}
+
+/* #region Заголовок */
+header {
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    padding: 1rem;
+    height: 2.5rem;
+    width: 100%;
+    box-shadow: 0 0 1rem #006eff42;
+
+    z-index: 55;
+}
+
+/* ссылка заголовка */
+header a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+/* стиль заголовка h2 в ссылке */
+header a h2 {
+    display: inline-block;
+    margin: 0;
+    line-height: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* логотип заголовка */
+header img {
+    width: 2.5rem;
+    margin: 0 1rem -0.6rem 2.5rem;
+}
+
+/* название страницы */
+header h3 {
+    display: inline;
+    text-align: center;
+    color: rgb(32, 92, 221);
+
+    margin-left: 40%;
+}
+
+/* #endregion */
+
+/* #region Навигационная панель */
+nav {
+    position: fixed;
+    top: 5rem;
+    width: 20rem;
+
+    font-size: 1rem;
+
+    z-index: 55;
+}
+
+/* список */
+nav ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+/* элементы списка */
+
+/* ссылки списка */
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.836);
+
+    background-color: transparent;
+    width: 13rem;
+    padding: 1rem 2rem;
+    margin-bottom: 0.2rem;
+    border-radius: 1rem;
+
+    display: block;
+}
+
+/* наведение на ссылку */
+nav a:hover {
+    background-color: #d1ddf1;
+
+    font-weight: bold;
+}
+
+/* наведение на текущую вкладку */
+nav a.select-tab:hover {
+    background-color: #bfd3f5;
+}
+
+/* нажатие на ссылку */
+nav a:active,
+nav a.select-tab:active {
+    background-color: #fff;
+
+    box-shadow: inset 0 0 3rem #4b86d38e;
+
+    font-weight: bold;
+}
+
+/* текущая вкладка */
+nav a.select-tab {
+    font-weight: bold;
+    color: rgb(32, 92, 221);
+    background-color: #ffffff;
+    box-shadow: 0 0 1rem #ffffff67;
+}
+
+/* nav a.select-tab:active {
+    background-color: #fff;
+
+    box-shadow: inset 0 0 3rem #4b86d38e;
+
+    font-weight: bold;
+} */
+
+nav a img {
+    width: 2rem;
+    margin-bottom: -0.5rem;
+}
+
+/* #endregion */
+
+/* #region Контент */
+main {
+    padding: 3rem 3rem;
+    min-height: 50vh;
+
+    margin: 7rem 3rem 3rem 15rem;
+    margin-left: 20rem;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 0 0 6rem #4b86d38e;
+    /* box-shadow: inset 0 0 6rem #4b86d38e; */
+}
+
+/* Ссылка "Вверх */
+.goto-top {
+    display: block;
+    position: fixed;
+
+    padding: 0.7rem;
+    right: 5rem;
+    bottom: 5rem;
+    margin-top: 3rem;
+    background-color: #055bca54;
+    border-radius: 50%;
+    /* box-shadow: 1rem 1rem 3rem #bec3d9, -1rem -1rem 3rem #ffffff; */
+}
+
+/* изображение */
+.goto-top img {
+    width: 2rem;
+}
+
+/* наведение на ссылку */
+.goto-top:hover {
+    color: #115cbd;
+    /* background-color: #4c7cbba2; */
+    box-shadow: 0 0 2rem #1d3b6344;
+    /* box-shadow: 10px 10px 3rem #bec3d9, -10px 10px 3rem #ffffff;
+    box-shadow: 10px 10px 3rem #bec3d9, -10px 10px 3rem #ffffff; */
+}
+
+/* нажатие на ссылку */
+.goto-top:active {
+    color: #115cbd;
+    /* background-color: #4c7cbba2; */
+    box-shadow: inset 0 0 2rem #1e3c64;
+}
+
+/* #endregion */
+
+/* #region Подвал страницы */
+footer {
+    font-size: 1.1rem;
+    margin: 3rem 0 3rem 20rem;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+/* фрагменты подвала */
+footer span {
+    display: inline-block;
+
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* наведение на фрагменты подвала */
+footer span:hover {
+    color: #000;
+}
+
+/* ссылки подвала */
+footer span a {
+    text-decoration: none;
+    color: #2771d1;
+}
+
+/* #endregion */

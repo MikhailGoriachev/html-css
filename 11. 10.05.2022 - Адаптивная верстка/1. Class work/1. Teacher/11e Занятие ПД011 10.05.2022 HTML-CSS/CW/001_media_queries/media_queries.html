@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Media Queries</title>
+    <style>
+        /* медиа-запрос для адаптивной верстки, кроме screen может быть
+           также printer
+           Для дисплея с разрешением меньше 600 пикселей
+                                         до 600 px       */
+        @media screen and (max-width: 600px) {
+            body {
+                background: lightpink;
+            }
+        }
+
+
+        /* Для дисплея с разрешением больше 600 пикселей и меньше 900 */
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+            body {
+                background: lightblue;
+            }
+        }
+
+        /* или вариант с подключением отдельного файла CSS для разрешения меньше 600 пикселей
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" /> */
+
+        /* Для дисплея с разрешением больше 900 пикселей */
+        @media screen and (min-width: 900px) {
+            body {
+                background: lightgreen;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <h3>При изменении ширины окна браузера меняется цвет фона</h3>
+</body>
+</html>
+

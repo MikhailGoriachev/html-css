@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Использование display: flexbox</title>
+
+        <style>
+            .grid {
+                /* flexbox - указывает, что содержимое контейнер выводиться
+            по горизонтали или по вертикали в зависимости от параметра box-orient
+            */
+                display: -moz-box;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flexbox; /* flexbox*/
+
+                -moz-box-orient: vertical;
+                -webkit-box-orient: vertical;
+                box-orient: vertical; /* horizontal */
+            }
+
+            .block {
+                width: 400px;
+                background: #0094ff;
+                padding: 20px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Flexbox-верстка</h2>
+
+        <div class="grid">
+            <div class="block">Block 1</div>
+            <div class="block">Block 2</div>
+            <div class="block">Block 3</div>
+            <div class="block">Block 4</div>
+        </div>
+
+        <div class="block">Block 5</div>
+    </body>
+</html>

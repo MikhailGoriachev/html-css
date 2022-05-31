@@ -1,0 +1,99 @@
+/* Стили для страницы page2.html "Брянская область" */
+
+/* контент */
+.main-container {
+    font-family: Calibri, sans-serif;
+    font-size: 1.4rem;
+}
+
+/* заголовки второго уровня контента */
+.main-container h2 {
+    font-family: "Calibri Light", sans-serif;
+    font-size: 2rem;
+    color: #2e74b5;
+}
+
+/* обзацы контента */
+.main-container p {
+    text-indent: 1.25cm;
+    margin: 0 0 0.8rem;
+}
+
+/* большой абзац */
+.main-container p:first-of-type,
+.main-container p:last-of-type {
+    font-size: 1.8rem;
+    font-family: Tahoma, sans-serif;
+}
+
+/* выравнивание текста по правому краю */
+.text-right {
+    text-align: right;
+}
+
+/* #region Таблица 1 */
+
+.table-first {
+    border-collapse: collapse;
+    white-space: 0;
+    border: 1px solid #7fa5f9;
+}
+
+/* заголовки */
+.table-first th {
+    background-color: #4472c4;
+    text-align: left;
+    padding: 0 0.5rem;
+    color: #fff;
+}
+
+/* ячейки таблицы */
+.table-first td {
+    border-bottom: 1px solid #7fa5f9;
+    padding: 0 0.5rem;
+}
+
+/* нечётные ячейки таблицы */
+.table-first tr:nth-child(odd) {
+    background-color: #d9e2f3;
+}
+
+/* #endregion */
+
+/* #region Таблица 2 */
+
+/* таблица */
+.table-second {
+    border-collapse: collapse;
+    white-space: 0;
+    margin-bottom: 1.8rem;
+    color: #2f5496;
+    border: 1px solid #8eaadb;
+}
+
+/* заголовки */
+.table-second th {
+    text-align: left;
+    vertical-align: text-top;
+    border-top: 1px solid #8eaadb;
+    border-bottom: 1px solid #8eaadb;
+    padding: 0 0.5rem;
+}
+
+/* ячейки */
+.table-second td {
+    border-bottom: 1px solid #8eaadb;
+    padding: 0 0.5rem;
+}
+
+/* нечёнтные строки */
+.table-second tbody tr:nth-child(odd) {
+    background-color: #d9e2f3;
+}
+
+/* ограниченная ячейка по ширине */
+.cell-size-max {
+    width: 4.28cm;
+}
+
+/* #endregion */

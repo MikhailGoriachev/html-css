@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>box-ordinal-group</title>
+    <style>
+        .box {
+            margin: 20px;
+
+            display: -moz-box;
+            display: -webkit-box;
+            display: -ms-flex;
+            display: flexbox; /* flexbox */
+
+            border: 1px solid black;
+        }
+
+        div{
+            margin: 10px;
+            padding:20px;
+        }
+
+        .class1 {
+            /* Определяет порядок отображения элементов. Элементы с меньшим
+            значением отображаются раньше тех, значения которых больше
+            */
+            -moz-box-ordinal-group: 2;
+            -webkit-box-ordinal-group: 2;
+            -ms-box-ordinal-group: 2;
+            box-ordinal-group: 2;
+
+            background-color: lightcoral;
+        }
+
+        .class2 {
+            -moz-box-ordinal-group: 5;
+            -webkit-box-ordinal-group: 5;
+            -ms-box-ordinal-group: 5;
+            box-ordinal-group: 5;
+
+            background: lightgreen;
+        }
+
+        .class3 {
+
+            -moz-box-ordinal-group: 3;
+            -webkit-box-ordinal-group: 3;
+            -ms-box-ordinal-group: 3;
+            box-ordinal-group: 3;
+
+            background: lightblue;
+        }
+
+        .class4 {
+
+            -moz-box-ordinal-group: 4;
+            -webkit-box-ordinal-group: 4;
+            -ms-box-ordinal-group: 4;
+            box-ordinal-group: 4;
+
+            background: lightcyan;
+        }
+
+        .class5 {
+
+            -moz-box-ordinal-group: 1;
+            -webkit-box-ordinal-group: 1;
+            -ms-box-ordinal-group: 1;
+            box-ordinal-group: 1;
+
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="class1">Block-1</div>
+        <div class="class2">Block-2</div>
+        <div class="class3">Block-3</div>
+        <div class="class4">Block-4</div>
+        <div class="class5">Block-5</div>
+    </div>
+
+</body>
+</html>
+
+

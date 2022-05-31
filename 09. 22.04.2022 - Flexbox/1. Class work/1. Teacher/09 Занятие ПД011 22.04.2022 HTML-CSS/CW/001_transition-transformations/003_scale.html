@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Scale</title>
+
+    <style>
+        body {
+            padding: 100px;
+        }
+
+        /* для удобства */
+        img {
+            border: solid 1px black;
+        }
+
+        img {
+            -moz-transition: all 3s;
+            -o-transition: all 3s;
+            -webkit-transition: all 3s;
+            transition: all 3s;
+        }
+
+        img:hover {
+            -moz-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            -o-transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            transform: scaleX(0.5); /* уменьшаем элемент в два раза */
+        }
+    </style>
+</head>
+<body>
+    <h1>Наведите курсор на картинку</h1>
+    <img src="front.jpg" alt="King Of Hearts" />
+</body>
+</html>

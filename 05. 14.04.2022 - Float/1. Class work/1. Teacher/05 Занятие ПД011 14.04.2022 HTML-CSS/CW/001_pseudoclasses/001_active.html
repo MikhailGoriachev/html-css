@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Селектор псевдоклассов</title>
+    <style>
+        a {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        /*
+        Псевдоклассы – элементы CSS стилей, определяющие динамическое состояние элементов,
+        которое изменяется при взаимодействии пользователя со страницей.
+		
+		синтаксис
+        селектор:псевдкласс { стили }
+
+        порядок перечисления псевдоклассов для a - важен !!!
+        */
+
+        /* :link - задает стили для не посещенной ссылки. */
+        a:link {
+            color: #497DDD;
+        }
+
+        /* :visited - задает стили для ссылки, по которой уже выполнялся переход. */
+        a:visited {
+            color: #EF7D55;
+        }
+
+        /* :hover - задает стили для элемента, когда на него наводят курсор.
+        Действует не только для ссылок. */
+        a:hover {
+            color: #154088;
+            background-color: lightblue;
+        }
+
+        /* :active - задает стили для ссылки на которой удерживается "нажатый" курсор. */
+        a:active {
+            color: white;
+            background-color: black;
+        }
+
+        /* псевдокласс p:hover */
+        p:hover {
+            background-color: #154088;
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Псевдокласс для оформления ссылок</h1>
+    <a href="https://angular.io/">Angular framework</a>
+    <a href="https://spring.io/">Spring framework</a>
+    <a href="https://getbootstrap.com/">Bootstrap framework</a>
+    <a href="https://www.djangoproject.com/">Django framework</a>
+    <hr>
+    <!-- покажем действие псевдокласса p:hover -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta, eveniet laborum nobis officiis sed sit.
+        A alias, atque culpa dolores, est eum exercitationem labore modi quibusdam totam unde, veritatis!
+    </p>
+</body>
+</html>

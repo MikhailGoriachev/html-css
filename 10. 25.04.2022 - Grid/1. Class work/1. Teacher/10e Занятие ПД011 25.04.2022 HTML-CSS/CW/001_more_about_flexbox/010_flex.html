@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox flex</title>
+	<style>
+		.container-1{
+			/*создаем Flex контейнер */
+			display: flex;
+			/*позволяет вращать главную ось (column, column-reverse, row-reverse, row)*/
+			flex-direction:row;
+			/*отвечает за выравнивание элементов по главной оси. (flex-start, flex-end, center, space-between, space-around)*/
+			justify-content: center;
+			/*работает с осью, перпендикулярной главной оси. (flex-start, flex-end, center, stretch, baseline)*/
+			align-items: center; 
+			width: 100%;
+			height: 480px;
+			background-color: lavender;
+		}
+
+		.item{
+			height: 400px;
+			margin: 5px;;
+			padding: 10px;
+			color: white;
+
+			box-sizing: border-box;
+		}
+
+
+		.teal{
+			/*сокращенная запись для flex-grow, flex-shrink и flex-basis*/
+			flex: 1 2 250px;
+			background-color: teal;
+		}
+		.darkblue{
+			/*сокращенная запись для flex-grow, flex-shrink и flex-basis*/
+			flex: 2 5 250px;
+			background-color: darkblue;
+		}
+		.darkgreen{
+			/*сокращенная запись для flex-grow, flex-shrink и flex-basis*/
+			flex: 1 2 250px;
+			background-color: darkgreen;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container-1">
+		<div class="item teal">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+		<div class="item darkblue">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum adipisci eos, sequi
+				quibusdam, ducimus velit aperiam. Officia voluptates architecto doloribus nisi laudantium,
+				aperiam minus amet mollitia labore, quia autem quis.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum adipisci eos, sequi
+				quibusdam, ducimus velit aperiam. Officia voluptates architecto doloribus nisi laudantium,
+				aperiam minus amet mollitia labore, quia autem quis.
+			</p>
+		</div>
+		<div class="item darkgreen">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus soluta, exercitationem
+				distinctio id repellendus quasi, necessitatibus officia aliquam laudantium sit autem placeat
+				assumenda quaerat! Doloremque unde dolorum soluta error quae!
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus soluta, exercitationem
+				distinctio id repellendus quasi, necessitatibus officia aliquam laudantium sit autem placeat
+				assumenda quaerat! Doloremque unde dolorum soluta error quae!
+			</p>
+		</div>
+	</div>
+</body>
+</html>

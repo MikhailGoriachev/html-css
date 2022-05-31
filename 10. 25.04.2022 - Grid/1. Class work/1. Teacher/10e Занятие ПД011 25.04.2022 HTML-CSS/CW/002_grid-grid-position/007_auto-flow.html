@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>
+        AutoFlow function
+    </title>
+    <meta charset="utf-8" />
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: minmax(150px, 250px) 1fr 1fr;
+            grid-gap: 25px;
+            grid-template-rows: 1fr 2fr 3fr;
+
+            /*grid-auto-flow* - порядок отображения элементов на странице */
+            grid-auto-flow:  row; /* column */
+
+            background-color: lightgray;
+        }
+
+        .grid div {
+            background-color: darkcyan;
+            border: 1px solid black;
+
+            border-radius: 5px;
+            padding: 8px 15px;
+
+            color: white;
+            font-size: 18px;
+        }
+
+        .grid div:nth-child(odd) {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+        <div>Item-1</div>
+        <div>item-2</div>
+        <div>item-3</div>
+        <div>item-4</div>
+        <div>item-5</div>
+        <div>item-6</div>
+        <div>item-7</div>
+        <div>item-8</div>
+        <div>item-9</div>
+        <div>item-10</div>
+    </div>
+</body>
+</html>

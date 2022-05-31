@@ -1,0 +1,35 @@
+/* Стили страницы "Главная" (index.html) */
+
+/* секция main */
+main section {
+    font-family: Calibri, sans-serif;
+    font-size: 1.4rem;
+}
+
+/* заголовки h2 */
+main section h2 {
+    color: #76abee;
+    font-size: 1.6rem;
+    font-family: 'Calibri Light', sans-serif;
+
+    margin: 1.2rem 0 0;
+}
+
+/* абзацы */
+main section p {
+    margin: 0 0 0.8rem;
+}
+
+/* заголовки details */
+summary h2 {
+    display: inline-block;
+}
+
+/* элементы списка */
+main section ul {
+    margin: 0;
+}
+/* элементы списка */
+main section ul li {
+    margin: 0 0 0 0.64cm;
+}

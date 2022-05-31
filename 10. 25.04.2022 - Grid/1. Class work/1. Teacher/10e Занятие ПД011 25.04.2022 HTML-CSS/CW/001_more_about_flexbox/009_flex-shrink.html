@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox flex-shrink</title>
+    <style>
+        .container-1 {
+            /*создаем Flex контейнер */
+            display: flex;
+            /*главная ось*/
+            flex-direction: row;
+            /* выравниваем элементы по главной оси */
+            justify-content: center;
+            /* перпендикулярная ось */
+            align-items: center;
+            width: 100%;
+            height: 480px;
+            background-color: lavender;
+        }
+
+        .item {
+            /*определяет, насколько квадрату можно уменьшаться относительно соседних элементов
+              в размере (Принимает относительные значения) значение 0 говорит что квадратам
+              запрещено уменьшаться
+            */
+            flex-basis: 300px;
+
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .darkgreen {
+            /* элемент не уменьшается (почти) */
+            flex-shrink: 1;
+            background-color: darkgreen;
+        }
+
+        .teal {
+            /* будет меньше в 2 раза (исходного размера, по возможности) */
+            flex-shrink: 2;
+            background-color: teal;
+        }
+
+        .indigo {
+            flex-shrink: 2;
+            background-color: indigo;
+        }
+
+        .darkcyan {
+            flex-shrink: 2;
+            background-color: darkcyan;
+        }
+
+        .darkorchid {
+            /* будет меньше в 4 раза (исходного размера, по возможности) */
+            flex-shrink: 4;
+            background-color: darkorchid;
+        }
+
+        .darkmagenta {
+            flex-shrink: 4;
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="item darkgreen">1</div>
+        <div class="item teal">2</div>
+        <div class="item indigo">3</div>
+        <div class="item darkcyan">4</div>
+        <div class="item darkorchid">5</div>
+        <div class="item darkmagenta">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Пустые ячейки</title>
+    <style>
+        /* стиль пустых элементов страницы */
+        :empty {
+            background-color: lightseagreen;
+        }
+
+        /* стиль пустых абзацев, цвет фона наследуется от :empty страницы  */
+        p:empty {
+            height: 12px;
+            width: 120px;
+            padding: 20px;
+            margin: 0;
+        }
+
+        td {
+            width: 100px;
+        }
+
+        p {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ячейка 4</td>
+            <td></td>
+            <td>Ячейка 6</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Ячейка 8</td>
+            <td>Ячейка 9</td>
+        </tr>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti fuga iusto quas unde. Autem
+        distinctio eius et, excepturi expedita inventore, ipsa minima minus praesentium ratione saepe sint tenetur
+        velit?</p>
+
+    <!-- тут тоже бует применен псевдокласс :empty-->
+    <p></p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti fuga iusto quas unde. Autem
+        distinctio eius et, excepturi expedita inventore, ipsa minima minus praesentium ratione saepe sint tenetur
+        velit?</p>
+</body>
+</html>
